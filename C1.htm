@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!--
+ Archive processed by SingleFile 
+ url: http://informatics.mccme.ru/moodle/mod/statements/print3.php?id=30050 
+ saved date: Thu Jan 04 2018 15:09:00 GMT+0300 (MSK) 
+--><head>
+      <title>Параллель C. 1</title>
+      <style type="text/css">.problem-statement {
+    margin: 0.5em;
+    font-family: verdana;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.problem-statement p {
+    margin: 0 0 1em 0;
+}
+
+.problem-statement .header {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    margin-bottom: 0.5em;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    font-family: arial;
+}
+
+.problem-statement ul {
+    list-style: disc;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.problem-statement .property-title {
+    display: inline;
+}
+
+.problem-statement .property-title:after {
+    content: ": ";
+}
+
+.problem-statement .time-limit, .problem-statement .memory-limit, .problem-statement .input-file, .problem-statement .output-file {
+    margin: 0 auto;
+}
+
+.problem-statement .legend {
+    margin-bottom: 1em;
+}
+
+.problem-statement .section-title {
+    font-family: arial;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+.problem-statement .input-specification,
+    .problem-statement .output-specification,
+    .problem-statement .sample-tests,
+    .problem-statement .author,
+    .problem-statement .resource,
+    .problem-statement .date {
+    /*margin-bottom: 1em;*/
+}
+
+.problem-statement .output-specification {
+    margin-bottom: 1em;
+}
+
+.problem-statement .sample-tests .sample-test {
+}
+
+.problem-statement .sample-tests .input, .problem-statement .sample-tests .output {
+    border: 1px solid #888;
+}
+
+.problem-statement .sample-tests .output {
+    margin-bottom: 1em;
+    position: relative;
+    top: -1px;
+}
+
+.problem-statement .sample-tests pre {
+    line-height: 1.25em;
+    padding: 0.25em;
+    margin: 0;
+    background-color: #efefef;
+}
+
+.problem-statement .sample-tests .title {
+    font-family: arial;
+    padding: 0.25em;
+    border-bottom: 1px solid #888;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.problem-statement .tex-formula {
+    vertical-align: middle;
+    margin: 0;
+    border:medium none;
+    position: relative;
+    bottom: 2px;
+}
+
+.problem-statement .tex-span {
+    font-size: 125%;
+    font-family: times new roman;
+}
+
+.problem-statement .tex-font-size-tiny {
+    font-size: 70%;
+}
+
+.problem-statement .tex-font-size-script {
+    font-size: 75%;
+}
+
+.problem-statement .tex-font-size-footnotes {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-small {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-normal {
+    font-size: 100%;
+}
+
+.problem-statement .tex-font-size-large-1 {
+    font-size: 115%;
+}
+
+.problem-statement .tex-font-size-large-2 {
+    font-size: 130%;
+}
+
+.problem-statement .tex-font-size-large-3 {
+    font-size: 145%;
+}
+
+.problem-statement .tex-font-size-huge-1 {
+    font-size: 175%;
+}
+
+.problem-statement .tex-font-size-huge-2 {
+    font-size: 200%;
+}
+
+.problem-statement .tex-font-style-rm {
+}
+
+.problem-statement .tex-font-style-sf {
+    font-family: arial;
+}
+
+.problem-statement .tex-font-style-tt {
+    font-size: 110%;
+    font-family: courier new;
+}
+
+.problem-statement .tex-font-style-md {
+}
+
+.problem-statement .tex-font-style-bf {
+    font-weight: bold;
+}
+
+.problem-statement .tex-font-style-up {
+}
+
+.problem-statement .tex-font-style-it {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sl {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sc {
+    text-transform: uppercase;
+}
+
+.problem-statement .tex-graphics {
+    display: block;
+}
+</style>      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=">
+      
+      <meta name="description" content="Параллель C. 1">
+      <style rel="stylesheet" type="text/css" data-href="http://informatics.mccme.ru/moodle/mod/statements/statements_print.css">/* $Id: statements_print.css,v 1.1 2006/03/12 18:39:59 skodak Exp $ */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 0px;
+    font-family: "Times New Roman", Times, serif;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+.statements_title {
+    margin-left: -40px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.statements_summary {
+    margin-left: -40px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.statements_chapter_title {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: bold;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+
+    margin-left: -40px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.statements_chapter {
+    page-break-before: always;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* link rewriting for mozilla - collides with filters :-( */
+/*
+a[href^="http://"]:after, a[href^="ftp://"]:after {
+    content: " ["attr(href)"]";
+}
+*/
+
+/* just some hack - ignore user defined <font> */
+font {
+    color: #000000;
+    background-color: #EEEEEE;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* ===== TOC numbering styles ===== */
+
+/* numbering == NONE */
+.statements_toc_none {
+    page-break-before: always;
+}
+.statements_toc_none ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_none li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == NUMBERED */
+.statements_toc_numbered {
+    page-break-before: always;
+}
+.statements_toc_numbered ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_numbered li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == BULLETS */
+.statements_toc_bullets {
+    page-break-before: always;
+}
+.statements_toc_bullets ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_bullets ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_bullets li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_bullets li li {
+    margin-top: 0px;
+    list-style: circle;
+}
+
+/* numbering == INDENTED */
+.statements_toc_indented {
+    page-break-before: always;
+}
+.statements_toc_indented ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_indented ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_indented li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_indented li li {
+    margin-top: 0px;
+    list-style: none;
+}
+</style>
+    <style type="text/css">#jsMath_test {font-size:200%}
+</style><style type="text/css">.math {font-family: serif; font-style: normal; font-weight: normal}
+.typeset {font-family: serif; font-style: normal; font-weight: normal; line-height: normal; text-indent: 0px}
+.typeset .normal {font-family: serif; font-style: normal; font-weight: normal}
+div.typeset {text-align: center; margin: 1em 0px}
+span.typeset {text-align: left}
+.typeset span {text-align: left; border: 0px; margin: 0px; padding: 0px}
+a .typeset img, .typeset a img {border: 0px; border-bottom: 1px solid blue;}
+.typeset .size0 {font-size: 50%}
+.typeset .size1 {font-size: 60%}
+.typeset .size2 {font-size: 70%}
+.typeset .size3 {font-size: 85%}
+.typeset .size4 {font-size: 100%}
+.typeset .size5 {font-size: 120%}
+.typeset .size6 {font-size: 144%}
+.typeset .size7 {font-size: 173%}
+.typeset .size8 {font-size: 207%}
+.typeset .size9 {font-size: 249%}
+.typeset .cmr10 {font-family: jsMath-cmr10, serif}
+.typeset .cmbx10 {font-family: jsMath-cmbx10, jsMath-cmr10}
+.typeset .cmti10 {font-family: jsMath-cmti10, jsMath-cmr10}
+.typeset .cmmi10 {font-family: jsMath-cmmi10}
+.typeset .cmsy10 {font-family: jsMath-cmsy10}
+.typeset .cmex10 {font-family: jsMath-cmex10}
+.typeset .textit {font-family: serif; font-style: italic}
+.typeset .textbf {font-family: serif; font-weight: bold}
+.typeset .link {text-decoration: none}
+.typeset .error {font-size: 90%; font-style: italic; background-color: #FFFFCC; padding: 1px; border: 1px solid #CC0000}
+.typeset .blank {display: inline-block; overflow: hidden; border: 0px none; width: 0px; height: 0px}
+.typeset .spacer {display: inline-block}
+#jsMath_hiddenSpan {visibility: hidden; position: absolute; top: 0px; left: 0px; line-height: normal; text-indent: 0px}
+#jsMath_message {position: fixed; bottom: 1px; left: 2px; background-color: #E6E6E6; border: solid 1px #959595; margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: small; width: auto}
+#jsMath_panel {position: fixed; bottom: 1.75em; right: 1.5em; padding: .8em 1.6em; background-color: #DDDDDD; border: outset 2px; z-index: 103; width: auto; color: black; font-size: 10pt; font-style: normal}
+#jsMath_panel .disabled {color: #888888}
+#jsMath_panel .infoLink {font-size: 85%}
+#jsMath_panel * {font-size: inherit; font-style: inherit; font-family: inherit; line-height: normal}
+#jsMath_panel div {background-color: inherit; color: inherit}
+#jsMath_panel span {background-color: inherit; color: inherit}
+#jsMath_panel td {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel tr {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel table {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit; height: auto; width: auto}
+#jsMath_button {position: fixed; bottom: 1px; right: 2px; background-color: white; border: solid 1px #959595; margin: 0px; padding: 0px 3px 1px 3px; z-index: 102; color: black; text-decoration: none; font-size: x-small; width: auto; cursor: hand}
+#jsMath_button * {padding: 0px; border: 0px; margin: 0px; line-height: normal; font-size: inherit; font-style: inherit; font-family: inherit}
+#jsMath_global {font-style: italic}
+#jsMath_noFont .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: small; width: auto}
+#jsMath_noFont .link {padding: 0px 5px 2px 5px; border: 2px outset; background-color: #E8E8E8; color: black; font-size: 80%; width: auto; cursor: hand}
+#jsMath_PrintWarning .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: x-small; width: auto}
+@media print {#jsMath_button {display: none}
+#jsMath_Warning {display: none}
+}
+@media screen {#jsMath_PrintWarning {display: none}
+}
+.typeset .scale {font-size: 120%}
+</style><style type="text/css">.typeset .math {font-style: normal}
+.typeset .typeset {font-style: normal}
+.typeset .icmr10 {font-family: serif}
+.typeset .icmmi10 {font-family: serif; font-style: italic}
+.typeset .icmbx10 {font-family: serif; font-weight: bold}
+.typeset .icmti10 {font-family: serif; font-style: italic}
+</style><link type="image/x-icon" rel="shortcut icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></head>
+    <body><div id="jsMath_message" title="" style="visibility: hidden;">Processing Math: Done</div><div id="jsMath_PrintWarning"><center><table><tbody><tr><td><div class="message">To print higher-resolution math symbols, click the<br>
+<b>Hi-Res Fonts for Printing</b> button on the jsMath control panel.<br>
+</div><div style="width:22em; height:1px"></div></td></tr></tbody></table></center><hr></div><div id="jsMath_button" title=" Open jsMath Control Panel "><span onclick="jsMath.Controls.Panel()">jsMath</span></div><div id="jsMath_panel" style="display: none;"></div><div id="jsMath_Hidden" style="visibility: hidden; position: absolute; top: 0px; left: 0px; border: 0px; padding: 0px; margin: 0px;"></div><div style="position: fixed; bottom: 1px; left: 2px; background-color: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: 75%; width: auto; visibility: hidden;"></div>
+    <a name="top"></a>
+    <p class="statements_title">Параллель C. 1</p>
+    <p class="statements_summary"></p>
+    <div class="statements_info"><table>
+    <tbody><tr>
+    <td>Сайт:</td>
+    <td><a href="http://informatics.mccme.ru">Дистанционная подготовка</a></td>
+    </tr><tr>
+    <td>Курс:</td>
+    <td>Фоксфорд. Зима 17-18</td>
+    </tr><tr>
+    <td>Условия задач:</td>
+    <td>Параллель C. 1</td>
+    </tr><tr>
+    <td>Printed by:</td>
+    <td>Николай Лавренов</td>
+    </tr><tr>
+    <td>Date:</td>
+    <td>Четверг 4 Январь 2018, 16:08</td>
+    </tr>
+    </tbody></table></div>
+
+    <div class="statements_toc_alpha"><a name="toc"></a><p class="statements_chapter_title">Список задач</p><ul><li><a href="#ch355"><b>Задача A.</b> Симметричная ли матрица?</a></li><li><a href="#ch3080"><b>Задача B.</b> Наименьшее расстояние между локальными максимумами</a></li><li><a href="#ch363"><b>Задача C.</b> Заполнение змейкой</a></li></ul></div><hr><div class="statements_chapter"><h1><a name="ch355">Симметричная ли матрица?</a></h1><p class="statements_chapter_title"><b>Задача A.</b> Симметричная ли матрица?</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Проверьте, является ли двумерный массив симметричным относительно главной диагонали. Главная диагональ — та, которая идёт из левого верхнего угла двумерного массива в правый нижний.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Программа получает на вход число <code>n <span class="typeset"><nobr><span class="scale"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAQAAACxtDVnAAAAAmJLR0QA/4ePzL8AAACDSURBVHjadY+hEQIxEEXfZq6KCCQKlRJOxdJA+kFQQmqIZc5cCTFnUwGGDhaTHBwh+9W+P//vrCj9yI2z6WCUwlOv6C4skUKo2w4TucFq4FjJeOVbBrhwYtHHz7EaDBQi9lClHzOTmsmxGU9mxSnSPyiOOy/59zmAGXAmEMfc8W2YeANOykjYbhilhAAAAABJRU5ErkJggg==" style=" width:12px; vertical-align:-3px; margin-right:0.059em;"></span></nobr></span> 100</code><code></code>, являющееся числом строк и столбцов в массиве. Далее во входном потоке идет <code>n</code> строк по <code><span style="font-family: trebuchet ms,verdana,arial,helvetica,sans-serif"><font face="courier new,courier,monospace">n</font></span></code> чисел, являющихся элементами массива.</p>
+
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Программа должна выводить слово <code>yes</code> для симметричного массива и слово <code>no</code> для несимметричного.</p>
+
+    </div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3
+0 1 2
+1 5 3
+2 3 4
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">yes
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3
+0 0 0
+0 0 0
+1 0 0
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">no
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3080">Наименьшее расстояние между локальными максимумами</a></h1><p class="statements_chapter_title"><b>Задача B.</b> Наименьшее расстояние между локальными максимумами</p><div class="problem-statement">
+   <div class="legend">
+  
+<p>Определите наименьшее расстояние между двумя локальными максимумами последовательности натуральных чисел, завершающейся числом 0. Если в последовательности нет двух локальных максимумов, выведите число 0.  </p>   
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Дана последовательность натуральных чисел,оканчивающаяся числом 0 (само число 0 в последовательность не входит)</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1
+2
+1
+1
+2
+1
+2
+1
+0
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">2
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1
+2
+3
+0
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">0
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch363">Заполнение змейкой</a></h1><p class="statements_chapter_title"><b>Задача C.</b> Заполнение змейкой</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Даны числа <code>n</code> и <code>m</code>. Создайте массив<code> A[n][m]</code> и заполните его змейкой (см. пример).<!-- /@w --></p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Программа получает на вход два числа <code>n</code> и <code>m</code>.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Программа должна вывести&nbsp; полученный массив, отводя на вывод каждого числа ровно 3 символа.</p>
+
+    </div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">4 10
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">  0  1  2  3  4  5  6  7  8  9
+ 19 18 17 16 15 14 13 12 11 10
+ 20 21 22 23 24 25 26 27 28 29
+ 39 38 37 36 35 34 33 32 31 30
+</pre></div></div></div></div></div> <autoscroll></autoscroll></body></html>

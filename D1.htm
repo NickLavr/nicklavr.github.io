@@ -1,0 +1,655 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!--
+ Archive processed by SingleFile 
+ url: http://informatics.mccme.ru/moodle/mod/statements/print3.php?id=26800 
+ saved date: Mon Aug 14 2017 19:20:51 GMT+0300 (MSK) 
+--><head>
+      <title>Параллель D. Ввод-вывод</title>
+      <style type="text/css">.problem-statement {
+    margin: 0.5em;
+    font-family: verdana;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.problem-statement p {
+    margin: 0 0 1em 0;
+}
+
+.problem-statement .header {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    margin-bottom: 0.5em;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    font-family: arial;
+}
+
+.problem-statement ul {
+    list-style: disc;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.problem-statement .property-title {
+    display: inline;
+}
+
+.problem-statement .property-title:after {
+    content: ": ";
+}
+
+.problem-statement .time-limit, .problem-statement .memory-limit, .problem-statement .input-file, .problem-statement .output-file {
+    margin: 0 auto;
+}
+
+.problem-statement .legend {
+    margin-bottom: 1em;
+}
+
+.problem-statement .section-title {
+    font-family: arial;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+.problem-statement .input-specification,
+    .problem-statement .output-specification,
+    .problem-statement .sample-tests,
+    .problem-statement .author,
+    .problem-statement .resource,
+    .problem-statement .date {
+    /*margin-bottom: 1em;*/
+}
+
+.problem-statement .output-specification {
+    margin-bottom: 1em;
+}
+
+.problem-statement .sample-tests .sample-test {
+}
+
+.problem-statement .sample-tests .input, .problem-statement .sample-tests .output {
+    border: 1px solid #888;
+}
+
+.problem-statement .sample-tests .output {
+    margin-bottom: 1em;
+    position: relative;
+    top: -1px;
+}
+
+.problem-statement .sample-tests pre {
+    line-height: 1.25em;
+    padding: 0.25em;
+    margin: 0;
+    background-color: #efefef;
+}
+
+.problem-statement .sample-tests .title {
+    font-family: arial;
+    padding: 0.25em;
+    border-bottom: 1px solid #888;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.problem-statement .tex-formula {
+    vertical-align: middle;
+    margin: 0;
+    border:medium none;
+    position: relative;
+    bottom: 2px;
+}
+
+.problem-statement .tex-span {
+    font-size: 125%;
+    font-family: times new roman;
+}
+
+.problem-statement .tex-font-size-tiny {
+    font-size: 70%;
+}
+
+.problem-statement .tex-font-size-script {
+    font-size: 75%;
+}
+
+.problem-statement .tex-font-size-footnotes {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-small {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-normal {
+    font-size: 100%;
+}
+
+.problem-statement .tex-font-size-large-1 {
+    font-size: 115%;
+}
+
+.problem-statement .tex-font-size-large-2 {
+    font-size: 130%;
+}
+
+.problem-statement .tex-font-size-large-3 {
+    font-size: 145%;
+}
+
+.problem-statement .tex-font-size-huge-1 {
+    font-size: 175%;
+}
+
+.problem-statement .tex-font-size-huge-2 {
+    font-size: 200%;
+}
+
+.problem-statement .tex-font-style-rm {
+}
+
+.problem-statement .tex-font-style-sf {
+    font-family: arial;
+}
+
+.problem-statement .tex-font-style-tt {
+    font-size: 110%;
+    font-family: courier new;
+}
+
+.problem-statement .tex-font-style-md {
+}
+
+.problem-statement .tex-font-style-bf {
+    font-weight: bold;
+}
+
+.problem-statement .tex-font-style-up {
+}
+
+.problem-statement .tex-font-style-it {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sl {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sc {
+    text-transform: uppercase;
+}
+
+.problem-statement .tex-graphics {
+    display: block;
+}
+</style>      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=">
+      
+      <meta name="description" content="Параллель D. Ввод-вывод">
+      <style rel="stylesheet" type="text/css" data-href="http://informatics.mccme.ru/moodle/mod/statements/statements_print.css">/* $Id: statements_print.css,v 1.1 2006/03/12 18:39:59 skodak Exp $ */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 0px;
+    font-family: "Times New Roman", Times, serif;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+.statements_title {
+    margin-left: -40px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.statements_summary {
+    margin-left: -40px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.statements_chapter_title {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: bold;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+
+    margin-left: -40px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.statements_chapter {
+    page-break-before: always;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* link rewriting for mozilla - collides with filters :-( */
+/*
+a[href^="http://"]:after, a[href^="ftp://"]:after {
+    content: " ["attr(href)"]";
+}
+*/
+
+/* just some hack - ignore user defined <font> */
+font {
+    color: #000000;
+    background-color: #EEEEEE;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* ===== TOC numbering styles ===== */
+
+/* numbering == NONE */
+.statements_toc_none {
+    page-break-before: always;
+}
+.statements_toc_none ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_none li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == NUMBERED */
+.statements_toc_numbered {
+    page-break-before: always;
+}
+.statements_toc_numbered ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_numbered li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == BULLETS */
+.statements_toc_bullets {
+    page-break-before: always;
+}
+.statements_toc_bullets ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_bullets ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_bullets li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_bullets li li {
+    margin-top: 0px;
+    list-style: circle;
+}
+
+/* numbering == INDENTED */
+.statements_toc_indented {
+    page-break-before: always;
+}
+.statements_toc_indented ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_indented ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_indented li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_indented li li {
+    margin-top: 0px;
+    list-style: none;
+}
+</style>
+    <link type="image/x-icon" rel="shortcut icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></head>
+    <body>
+    <a name="top"></a>
+    <p class="statements_title">Параллель D. Ввод-вывод</p>
+    <p class="statements_summary"></p>
+    
+
+    <div class="statements_toc_alpha"><a name="toc"></a><p class="statements_chapter_title">Список задач</p><ul><li><a href="#ch2793"><b>Задача A.</b> Hello, Harry!</a></li><li><a href="#ch2937"><b>Задача B.</b> Следующее и предыдущее</a></li><li><a href="#ch2938"><b>Задача C.</b> Дележ яблок - 1</a></li><li><a href="#ch2939"><b>Задача D.</b> Дележ яблок - 2</a></li><li><a href="#ch2940"><b>Задача E.</b> МКАД</a></li><li><a href="#ch2945"><b>Задача F.</b> Следующее четное</a></li><li><a href="#ch2941"><b>Задача G.</b> Последняя цифра</a></li><li><a href="#ch2942"><b>Задача H.</b> Число десятков двузначного числа</a></li><li><a href="#ch2947"><b>Задача I.</b> Электронные часы - 1</a></li><li><a href="#ch2949"><b>Задача J.</b> Обмен значений</a></li></ul></div><hr><div class="statements_chapter"><h1><a name="ch2793">Hello, Harry!</a></h1><p class="statements_chapter_title"><b>Задача A.</b> Hello, Harry!</p>        <div class="problem-statement"><div class="legend">
+
+<p>Напишите программу, которая запрашивает имя пользователя, а затем приветствует его.</p></div><p></p>
+<p></p><div class="input-specification"><div class="section-title">Входные данные</div><p></p>
+
+<p>Пользователь вводит одно слово латинскими буквами - имя.</p></div><p></p>
+
+<p></p><div class="output-specification"><div class="section-title">Выходные данные</div><p></p>
+
+<p>Программа должна выводить одну строчку: </p><p>Hello, имя!</p><p>где имя&nbsp;— введенной пользователем имя. Обратите внимание на пробел после запятой. Других пробелов быть не должно! Запрашивая имя, программа не должна выводить никакого поясняющего текста (типа Enter your name)!</p></div><p></p>
+
+
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">Harry
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">Hello, Harry!
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">Hermiona
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">Hello, Hermiona!
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2937">Следующее и предыдущее</a></h1><p class="statements_chapter_title"><b>Задача B.</b> Следующее и предыдущее</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Напишите программу, которая считывает целое число и выводит текст, аналогичный приведенному в примере. Пробелы, знаки препинания, заглавные и строчные буквы важны!</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится целое число.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">179
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">The next number for the number 179 is 180.
+The previous number for the number 179 is 178.
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2938">Дележ яблок - 1</a></h1><p class="statements_chapter_title"><b>Задача C.</b> Дележ яблок - 1</p><div class="problem-statement">
+   <div class="legend">
+
+<p><em>N</em> школьников делят <em>K</em> яблок поровну, неделящийся остаток остается в корзинке. Сколько яблок достанется каждому школьнику? </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Программа получает на вход числа <em>N</em> и <em>K</em>. </p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Программа должна вывести искомое количество яблок. </p>
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3
+14
+
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">4
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2939">Дележ яблок - 2</a></h1><p class="statements_chapter_title"><b>Задача D.</b> Дележ яблок - 2</p><div class="problem-statement">
+   <div class="legend">
+
+<p><em>N</em> школьников делят <em>K</em> яблок поровну, неделящийся остаток остается в корзинке. Сколько яблок останется в корзинке? </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Программа получает на вход числа <em>N</em> и <em>K</em>.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Программа должна вывести искомое количество яблок.  </p>
+
+   </div>
+   </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3
+14
+
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">2
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2940">МКАД</a></h1><p class="statements_chapter_title"><b>Задача E.</b> МКАД</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Длина Московской кольцевой автомобильной дороги&nbsp;—109 километров. Байкер Вася стартует с нулевого километра МКАД и едет со скоростью <em>v</em> километров в час. На какой отметке он остановится через <em>t</em> часов?  </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Программа получает на вход значения <em>v</em> и <em>t</em>. Если <em>v</em>&gt;0, то Вася движется в положительном направлении по МКАД, если же значение <em>v</em>&lt;0, то в отрицательном.  </p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Программа должна вывести целое число от 0 до 108&nbsp;— номер отметки, на которой остановится Вася.  </p>
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">60
+2
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">11
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">-1
+1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">108
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2945">Следующее четное</a></h1><p class="statements_chapter_title"><b>Задача F.</b> Следующее четное</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Дано целое число <em>n</em>. Выведите следующее за ним <strong>четное</strong> число. При решении этой задачи нельзя использовать условную инструкцию if и циклы. </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится натуральное число.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">7
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">8
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">8
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">10
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2941">Последняя цифра</a></h1><p class="statements_chapter_title"><b>Задача G.</b> Последняя цифра</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Дано натуральное число. Выведите его последнюю цифру. </p>
+
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится натуральное число.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">179
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">9
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2942">Число десятков двузначного числа</a></h1><p class="statements_chapter_title"><b>Задача H.</b> Число десятков двузначного числа</p><div class="problem-statement">
+   <div class="legend">
+
+ <p>Дано двузначное число. Найдите число десятков в нем. </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится двухзначное число.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">42
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">4
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2947">Электронные часы - 1</a></h1><p class="statements_chapter_title"><b>Задача I.</b> Электронные часы - 1</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Дано число <em><strong>n</strong></em>. С начала суток прошло <em><strong>n</strong></em> минут. Определите, сколько часов и минут будут показывать электронные часы в этот момент. Программа должна вывести два числа: количество часов (от 0 до 23) и количество минут (от 0 до 59). Учтите, что число <em><strong>n</strong></em> может быть больше, чем количество минут в сутках.  
+
+   </p></div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится целое число <em><strong>n</strong></em>.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">150
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">2 30
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1441
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">0 1
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2949">Обмен значений</a></h1><p class="statements_chapter_title"><b>Задача J.</b> Обмен значений</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Напишите программу, которая считывает значения двух целочисленных переменных <em><strong>a</strong></em> и <em><strong>b</strong></em>, затем меняет их значения местами (то есть в переменной <em><strong>a</strong></em> должно быть записано то, что раньше хранилось в <em><strong>b</strong></em>, а в переменной <em><strong>b</strong></em> записано то, что раньше хранилось в <em><strong>a</strong></em>). Затем выведите значения переменных.  </p>
+
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводятся целые числа <em><strong>a</strong></em> и <em><strong>b</strong></em>.</p>
+
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+   </div>
+<div class="note"><div class="section-title">Примечание</div>
+
+  <p>Решением задачи <strong>не</strong> является такой код: </p><pre>a = input ()<br>b = input ()<br>print (b, a)</pre><pre>То есть  ваша программа должна иметь примерно такой вид:</pre><pre>a = input ()<br>b = input ()<br># Допишите сюда<br># свой код<br>print (a, b) </pre><pre>&nbsp;</pre><p></p>
+
+   </div>
+   </div>
+
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">8
+5
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">5 8
+</pre></div></div></div></div></div> </body></html>

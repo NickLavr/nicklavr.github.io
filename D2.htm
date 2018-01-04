@@ -1,0 +1,776 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!--
+ Archive processed by SingleFile 
+ url: http://informatics.mccme.ru/moodle/mod/statements/print3.php?id=26801 
+ saved date: Tue Aug 15 2017 20:58:42 GMT+0300 (MSK) 
+--><head>
+      <title>Параллель D. Условная конструкция</title>
+      <style type="text/css">.problem-statement {
+    margin: 0.5em;
+    font-family: verdana;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.problem-statement p {
+    margin: 0 0 1em 0;
+}
+
+.problem-statement .header {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    margin-bottom: 0.5em;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    font-family: arial;
+}
+
+.problem-statement ul {
+    list-style: disc;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.problem-statement .property-title {
+    display: inline;
+}
+
+.problem-statement .property-title:after {
+    content: ": ";
+}
+
+.problem-statement .time-limit, .problem-statement .memory-limit, .problem-statement .input-file, .problem-statement .output-file {
+    margin: 0 auto;
+}
+
+.problem-statement .legend {
+    margin-bottom: 1em;
+}
+
+.problem-statement .section-title {
+    font-family: arial;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+.problem-statement .input-specification,
+    .problem-statement .output-specification,
+    .problem-statement .sample-tests,
+    .problem-statement .author,
+    .problem-statement .resource,
+    .problem-statement .date {
+    /*margin-bottom: 1em;*/
+}
+
+.problem-statement .output-specification {
+    margin-bottom: 1em;
+}
+
+.problem-statement .sample-tests .sample-test {
+}
+
+.problem-statement .sample-tests .input, .problem-statement .sample-tests .output {
+    border: 1px solid #888;
+}
+
+.problem-statement .sample-tests .output {
+    margin-bottom: 1em;
+    position: relative;
+    top: -1px;
+}
+
+.problem-statement .sample-tests pre {
+    line-height: 1.25em;
+    padding: 0.25em;
+    margin: 0;
+    background-color: #efefef;
+}
+
+.problem-statement .sample-tests .title {
+    font-family: arial;
+    padding: 0.25em;
+    border-bottom: 1px solid #888;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.problem-statement .tex-formula {
+    vertical-align: middle;
+    margin: 0;
+    border:medium none;
+    position: relative;
+    bottom: 2px;
+}
+
+.problem-statement .tex-span {
+    font-size: 125%;
+    font-family: times new roman;
+}
+
+.problem-statement .tex-font-size-tiny {
+    font-size: 70%;
+}
+
+.problem-statement .tex-font-size-script {
+    font-size: 75%;
+}
+
+.problem-statement .tex-font-size-footnotes {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-small {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-normal {
+    font-size: 100%;
+}
+
+.problem-statement .tex-font-size-large-1 {
+    font-size: 115%;
+}
+
+.problem-statement .tex-font-size-large-2 {
+    font-size: 130%;
+}
+
+.problem-statement .tex-font-size-large-3 {
+    font-size: 145%;
+}
+
+.problem-statement .tex-font-size-huge-1 {
+    font-size: 175%;
+}
+
+.problem-statement .tex-font-size-huge-2 {
+    font-size: 200%;
+}
+
+.problem-statement .tex-font-style-rm {
+}
+
+.problem-statement .tex-font-style-sf {
+    font-family: arial;
+}
+
+.problem-statement .tex-font-style-tt {
+    font-size: 110%;
+    font-family: courier new;
+}
+
+.problem-statement .tex-font-style-md {
+}
+
+.problem-statement .tex-font-style-bf {
+    font-weight: bold;
+}
+
+.problem-statement .tex-font-style-up {
+}
+
+.problem-statement .tex-font-style-it {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sl {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sc {
+    text-transform: uppercase;
+}
+
+.problem-statement .tex-graphics {
+    display: block;
+}
+</style>      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=">
+      
+      <meta name="description" content="Параллель D. Условная конструкция">
+      <style rel="stylesheet" type="text/css" data-href="http://informatics.mccme.ru/moodle/mod/statements/statements_print.css">/* $Id: statements_print.css,v 1.1 2006/03/12 18:39:59 skodak Exp $ */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 0px;
+    font-family: "Times New Roman", Times, serif;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+.statements_title {
+    margin-left: -40px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.statements_summary {
+    margin-left: -40px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.statements_chapter_title {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: bold;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+
+    margin-left: -40px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.statements_chapter {
+    page-break-before: always;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* link rewriting for mozilla - collides with filters :-( */
+/*
+a[href^="http://"]:after, a[href^="ftp://"]:after {
+    content: " ["attr(href)"]";
+}
+*/
+
+/* just some hack - ignore user defined <font> */
+font {
+    color: #000000;
+    background-color: #EEEEEE;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* ===== TOC numbering styles ===== */
+
+/* numbering == NONE */
+.statements_toc_none {
+    page-break-before: always;
+}
+.statements_toc_none ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_none li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == NUMBERED */
+.statements_toc_numbered {
+    page-break-before: always;
+}
+.statements_toc_numbered ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_numbered li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == BULLETS */
+.statements_toc_bullets {
+    page-break-before: always;
+}
+.statements_toc_bullets ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_bullets ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_bullets li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_bullets li li {
+    margin-top: 0px;
+    list-style: circle;
+}
+
+/* numbering == INDENTED */
+.statements_toc_indented {
+    page-break-before: always;
+}
+.statements_toc_indented ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_indented ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_indented li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_indented li li {
+    margin-top: 0px;
+    list-style: none;
+}
+</style>
+    <link type="image/x-icon" rel="shortcut icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></head>
+    <body>
+    <a name="top"></a>
+    <p class="statements_title">Параллель D. Условная конструкция</p>
+    <p class="statements_summary"></p>
+    
+
+    <div class="statements_toc_alpha"><a name="toc"></a><p class="statements_chapter_title">Список задач</p><ul><li><a href="#ch292"><b>Задача A.</b> Максимум  из двух чисел</a></li><li><a href="#ch2959"><b>Задача B.</b> Знак числа</a></li><li><a href="#ch294"><b>Задача C.</b> Максимум из трех</a></li><li><a href="#ch253"><b>Задача D.</b> Високосный  год</a></li><li><a href="#ch254"><b>Задача E.</b> Ладья</a></li><li><a href="#ch258"><b>Задача F.</b> Шоколадка</a></li><li><a href="#ch303"><b>Задача G.</b> Коровы</a></li><li><a href="#ch255"><b>Задача H.</b> Слон</a></li><li><a href="#ch256"><b>Задача I.</b> Ферзь</a></li><li><a href="#ch257"><b>Задача J.</b> Конь</a></li><li><a href="#ch304"><b>Задача K.</b> Билеты на метро</a></li><li><a href="#ch265"><b>Задача L.</b> Котлеты</a></li><li><a href="#ch244"><b>Задача M.</b> Красная шапочка</a></li></ul></div><hr><div class="statements_chapter"><h1><a name="ch292">Максимум  из двух чисел</a></h1><p class="statements_chapter_title"><b>Задача A.</b> Максимум  из двух чисел</p><div class="problem-statement">
+   <div class="legend">
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Даны два целых числа, каждое число записано в отдельной строке.</p> 
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+ <p>Выведите&nbsp;наибольшее из данных чисел.</p> 
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1
+2</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">2</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2959">Знак числа</a></h1><p class="statements_chapter_title"><b>Задача B.</b> Знак числа</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>В математике функция sign(x) (знак числа) определена так: <br>sign(x)&nbsp;=&nbsp;1,&nbsp;&nbsp;&nbsp;если x&nbsp;&gt;&nbsp;0, <br>sign(x)&nbsp;=&nbsp;-1,&nbsp;если x&nbsp;&lt;&nbsp;0, <br>sign(x)&nbsp;=&nbsp;0,&nbsp;&nbsp;&nbsp;если x&nbsp;=&nbsp;0.  </p>Для данного числа x выведите значение sign(x).
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится число x. </p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">179
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch294">Максимум из трех</a></h1><p class="statements_chapter_title"><b>Задача C.</b> Максимум из трех</p><div class="problem-statement">
+   <div class="legend">
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+ <p>Даны три целых числа, каждое записано в отдельной строке.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+ <p>Выведите&nbsp;наибольшее из данных чисел (программа должна вывести ровно одно целое число).</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1
+2
+3
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch253">Високосный  год</a></h1><p class="statements_chapter_title"><b>Задача D.</b> Високосный  год</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Требуется определить, является ли данный год високосным. (Напомним, что год является високосным, если его номер кратен 4, но не кратен 100, а также если он кратен 400.) </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится единственное число - номер года (целое, положительное, не превышает 30000).</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Требуется вывести слово YES, если год является високосным и NO - в противном случае.</p>
+
+    </div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">2007</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">NO</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">2000
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">YES</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch254">Ладья</a></h1><p class="statements_chapter_title"><b>Задача E.</b> Ладья</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Требуется определить, бьет ли ладья, стоящая на клетке с указанными координатами (номер строки и номер столбца), фигуру, стоящую на другой указанной клетке. </p>
+
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Вводятся четыре числа: координаты ладьи (два числа) и координаты другой фигуры (два числа), каждое число вводится в отдельной строке. Координаты - целые числа в интервале от 1 до 8.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Требуется вывести слово YES, если ладья сможет побить фигуру за 1 ход и NO - в противном случае.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1
+1
+2
+2
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">NO
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1
+1
+2
+1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">YES
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch258">Шоколадка</a></h1><p class="statements_chapter_title"><b>Задача F.</b> Шоколадка</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Требуется определить, можно ли от шоколадки размером <em>n</em>&nbsp;×&nbsp;<em>m</em> долек отломить <em>k</em> долек, если разрешается сделать один разлом по прямой между дольками (то есть разломить шоколадку на два прямоугольника). </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Вводятся 3 числа: <em>n</em>, <em>m</em> и <em>k</em>; <em>k</em> не равно <em>n</em>&nbsp;×&nbsp;<em>m</em>. Гарантируется, что количество долек в шоколадке не превосходит 30000. </p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Программа должна вывести слово YES, если возможно отломить указанное число долек, в противном случае вывести слово NO.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3
+2
+4
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">YES
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3
+2
+1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">NO
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch303">Коровы</a></h1><p class="statements_chapter_title"><b>Задача G.</b> Коровы</p><div class="problem-statement">
+   <div class="legend">
+
+<p>По данному числу <em>n</em> закончите фразу "На лугу пасется..." одним из возможных продолжений: "<em>n</em> коров", "<em>n</em> корова", "<em>n</em> коровы", правильно склоняя слово "корова".</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Дано число <em>n</em> (<em>n</em>&lt;100).<br></p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Программа должна вывести введенное число <em>n</em> и одно из слов (на латинице): <code>korov</code>, <code>korova</code> или <code>korovy</code>, например, <code>1 korova</code>, <code>2 korovy</code>, <code>5 korov</code>. Между числом и&nbsp;словом должен стоять ровно один пробел.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1 korova
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch255">Слон</a></h1><p class="statements_chapter_title"><b>Задача H.</b> Слон</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Требуется определить, бьет ли слон, стоящий на клетке с указанными координатами (номер строки и номер столбца), фигуру, стоящую на другой указанной клетке.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводятся четыре числа: координаты слона и координаты другой фигуры. Координаты - целые числа в интервале от 1 до 8.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Требуется вывести слово YES, если слон способен побить фигуру за 1 ход, в противном случае вывести слово NO</p>
+
+    </div>
+    </div>
+ <div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1
+1
+5
+5
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">YES
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3
+2
+2
+2
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">NO
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch256">Ферзь</a></h1><p class="statements_chapter_title"><b>Задача I.</b> Ферзь</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Требуется определить, бьет ли ферзь, стоящий на клетке с указанными координатами (номер строки и номер столбца), фигуру, стоящую на другой указанной клетке.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Вводятся четыре числа: координаты ферзя и координаты другой фигуры. Координаты - целые числа в интервале от 1 до 8.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Требуется вывести слово YES, если ферзь может побить фигуру за 1 ход, в противном случае вывести слово NO</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1
+1
+8
+1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">YES
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3
+2
+8
+3
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">NO
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch257">Конь</a></h1><p class="statements_chapter_title"><b>Задача J.</b> Конь</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Требуется определить, бьет ли конь, стоящий на клетке с указанными координатами (номер строки и номер столбца), фигуру, стоящую на другой указанной клетке. </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Вводятся четыре числа: координаты коня и координаты другой фигуры. Все координаты - целые числа в интервале от 1 до 8.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Программа должна вывести слово YES, если конь может побить фигуру за 1 ход, в противном случае вывести слово NO.</p>
+
+    </div>
+    </div>
+
+
+
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1
+1
+3
+2
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">YES
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1
+1
+3
+3
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">NO
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch304">Билеты на метро</a></h1><p class="statements_chapter_title"><b>Задача K.</b> Билеты на метро</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Билет на одну поездку в метро стоит 15 рублей, билет на 10 поездок стоит 125 рублей, билет на 60 поездок стоит 440 рублей. Пассажир планирует совершить <em>n</em> поездок. Определите, сколько билетов каждого вида он должен приобрести, чтобы суммарное количество оплаченных поездок было не меньше <em>n</em>, а общая стоимость приобретенных билетов <!-- /@w -->– минимальна.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Дано одно число <em>n</em> - количество поездок.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите&nbsp;три целых числа, равные необходимому количеству билетов на 1, на 10, на 60 поездок.</p>
+
+    </div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">129
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">0 1 2
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch265">Котлеты</a></h1><p class="statements_chapter_title"><b>Задача L.</b> Котлеты</p><div class="problem-statement">
+   <div class="legend">
+
+<p>На сковородку одновременно можно положить <em>k</em> котлет. Каждую котлету нужно с каждой стороны обжаривать <em>m</em> минут непрерывно. За какое наименьшее время удастся поджарить с обеих сторон <em>n</em> котлет? </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводятся 3 числа: <em>k</em>, <em>m</em> и <em>n</em>. Все числа не превосходят 32000. </p> 
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Вывести время, за которое все котлеты будут обжарены.</p>
+
+    </div>
+    </div><div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1
+5
+1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">10
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch244">Красная шапочка</a></h1><p class="statements_chapter_title"><b>Задача M.</b> Красная шапочка</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Красная Шапочка часто навещает свою бабушку. Но она очень боится, что рано или поздно ее бабушку опять навестит волк. Поэтому она решила договориться с Лесничим об охране бабушки. Лесничий согласился охранять бабушку за 10 пирожков.</p>
+
+
+<p>Узнав об этом, волк сказал Красной Шапочке, что ей совершенно незачем тратить пирожки на Лесничего. За половину тех пирожков, которые Красная Шапочка несет бабушке, Волк пообещал не трогать ее. </p>
+
+<p>Сегодня (26 ноября) в России отмечается день матери. Мама испекла несколько пирожков, и попросила Красную Шапочку отнести их бабушке. Требуется определить, сколько пирожков Красная Шапочка сможет донести до бабушки.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Вводится одно <i>четное </i>число - количество пирожков, которые испекла мама.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p lang="ru-RU" style="margin-bottom: 0cm" align="justify"><font face="Arial, sans-serif">Программа должна вывести&nbsp; одно число -&nbsp;количество пирожков, которые&nbsp;Красная Шапочка сможет донести до бабушки.</font></p>
+
+
+<h3>Ограничения</h3>
+<p>Решение задачи будет проверяться на тестовых примерах, в которых число испеченных мамой пирожков - натуральное число,&nbsp;не превосходящее&nbsp;100.</p><div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">12
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">6
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">100
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">90
+</pre></div></div></div></div></div> </div></div></body></html>

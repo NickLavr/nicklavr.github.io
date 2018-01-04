@@ -1,0 +1,644 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!--
+ Archive processed by SingleFile 
+ url: http://informatics.mccme.ru/moodle/mod/statements/print3.php?id=28454 
+ saved date: Wed Oct 25 2017 15:34:42 GMT+0300 (MSK) 
+--><head>
+      <title>Бабочки. День 4</title>
+      <style type="text/css">.problem-statement {
+    margin: 0.5em;
+    font-family: verdana;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.problem-statement p {
+    margin: 0 0 1em 0;
+}
+
+.problem-statement .header {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    margin-bottom: 0.5em;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    font-family: arial;
+}
+
+.problem-statement ul {
+    list-style: disc;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.problem-statement .property-title {
+    display: inline;
+}
+
+.problem-statement .property-title:after {
+    content: ": ";
+}
+
+.problem-statement .time-limit, .problem-statement .memory-limit, .problem-statement .input-file, .problem-statement .output-file {
+    margin: 0 auto;
+}
+
+.problem-statement .legend {
+    margin-bottom: 1em;
+}
+
+.problem-statement .section-title {
+    font-family: arial;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+.problem-statement .input-specification,
+    .problem-statement .output-specification,
+    .problem-statement .sample-tests,
+    .problem-statement .author,
+    .problem-statement .resource,
+    .problem-statement .date {
+    /*margin-bottom: 1em;*/
+}
+
+.problem-statement .output-specification {
+    margin-bottom: 1em;
+}
+
+.problem-statement .sample-tests .sample-test {
+}
+
+.problem-statement .sample-tests .input, .problem-statement .sample-tests .output {
+    border: 1px solid #888;
+}
+
+.problem-statement .sample-tests .output {
+    margin-bottom: 1em;
+    position: relative;
+    top: -1px;
+}
+
+.problem-statement .sample-tests pre {
+    line-height: 1.25em;
+    padding: 0.25em;
+    margin: 0;
+    background-color: #efefef;
+}
+
+.problem-statement .sample-tests .title {
+    font-family: arial;
+    padding: 0.25em;
+    border-bottom: 1px solid #888;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.problem-statement .tex-formula {
+    vertical-align: middle;
+    margin: 0;
+    border:medium none;
+    position: relative;
+    bottom: 2px;
+}
+
+.problem-statement .tex-span {
+    font-size: 125%;
+    font-family: times new roman;
+}
+
+.problem-statement .tex-font-size-tiny {
+    font-size: 70%;
+}
+
+.problem-statement .tex-font-size-script {
+    font-size: 75%;
+}
+
+.problem-statement .tex-font-size-footnotes {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-small {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-normal {
+    font-size: 100%;
+}
+
+.problem-statement .tex-font-size-large-1 {
+    font-size: 115%;
+}
+
+.problem-statement .tex-font-size-large-2 {
+    font-size: 130%;
+}
+
+.problem-statement .tex-font-size-large-3 {
+    font-size: 145%;
+}
+
+.problem-statement .tex-font-size-huge-1 {
+    font-size: 175%;
+}
+
+.problem-statement .tex-font-size-huge-2 {
+    font-size: 200%;
+}
+
+.problem-statement .tex-font-style-rm {
+}
+
+.problem-statement .tex-font-style-sf {
+    font-family: arial;
+}
+
+.problem-statement .tex-font-style-tt {
+    font-size: 110%;
+    font-family: courier new;
+}
+
+.problem-statement .tex-font-style-md {
+}
+
+.problem-statement .tex-font-style-bf {
+    font-weight: bold;
+}
+
+.problem-statement .tex-font-style-up {
+}
+
+.problem-statement .tex-font-style-it {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sl {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sc {
+    text-transform: uppercase;
+}
+
+.problem-statement .tex-graphics {
+    display: block;
+}
+</style>      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=">
+      
+      <meta name="description" content="Бабочки. День 4">
+      <style rel="stylesheet" type="text/css" data-href="http://informatics.mccme.ru/moodle/mod/statements/statements_print.css">/* $Id: statements_print.css,v 1.1 2006/03/12 18:39:59 skodak Exp $ */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 0px;
+    font-family: "Times New Roman", Times, serif;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+.statements_title {
+    margin-left: -40px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.statements_summary {
+    margin-left: -40px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.statements_chapter_title {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: bold;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+
+    margin-left: -40px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.statements_chapter {
+    page-break-before: always;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* link rewriting for mozilla - collides with filters :-( */
+/*
+a[href^="http://"]:after, a[href^="ftp://"]:after {
+    content: " ["attr(href)"]";
+}
+*/
+
+/* just some hack - ignore user defined <font> */
+font {
+    color: #000000;
+    background-color: #EEEEEE;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* ===== TOC numbering styles ===== */
+
+/* numbering == NONE */
+.statements_toc_none {
+    page-break-before: always;
+}
+.statements_toc_none ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_none li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == NUMBERED */
+.statements_toc_numbered {
+    page-break-before: always;
+}
+.statements_toc_numbered ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_numbered li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == BULLETS */
+.statements_toc_bullets {
+    page-break-before: always;
+}
+.statements_toc_bullets ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_bullets ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_bullets li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_bullets li li {
+    margin-top: 0px;
+    list-style: circle;
+}
+
+/* numbering == INDENTED */
+.statements_toc_indented {
+    page-break-before: always;
+}
+.statements_toc_indented ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_indented ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_indented li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_indented li li {
+    margin-top: 0px;
+    list-style: none;
+}
+</style>
+    <style type="text/css">#jsMath_test {font-size:200%}
+</style><style type="text/css">.math {font-family: serif; font-style: normal; font-weight: normal}
+.typeset {font-family: serif; font-style: normal; font-weight: normal; line-height: normal; text-indent: 0px}
+.typeset .normal {font-family: serif; font-style: normal; font-weight: normal}
+div.typeset {text-align: center; margin: 1em 0px}
+span.typeset {text-align: left}
+.typeset span {text-align: left; border: 0px; margin: 0px; padding: 0px}
+a .typeset img, .typeset a img {border: 0px; border-bottom: 1px solid blue;}
+.typeset .size0 {font-size: 50%}
+.typeset .size1 {font-size: 60%}
+.typeset .size2 {font-size: 70%}
+.typeset .size3 {font-size: 85%}
+.typeset .size4 {font-size: 100%}
+.typeset .size5 {font-size: 120%}
+.typeset .size6 {font-size: 144%}
+.typeset .size7 {font-size: 173%}
+.typeset .size8 {font-size: 207%}
+.typeset .size9 {font-size: 249%}
+.typeset .cmr10 {font-family: jsMath-cmr10, serif}
+.typeset .cmbx10 {font-family: jsMath-cmbx10, jsMath-cmr10}
+.typeset .cmti10 {font-family: jsMath-cmti10, jsMath-cmr10}
+.typeset .cmmi10 {font-family: jsMath-cmmi10}
+.typeset .cmsy10 {font-family: jsMath-cmsy10}
+.typeset .cmex10 {font-family: jsMath-cmex10}
+.typeset .textit {font-family: serif; font-style: italic}
+.typeset .textbf {font-family: serif; font-weight: bold}
+.typeset .link {text-decoration: none}
+.typeset .error {font-size: 90%; font-style: italic; background-color: #FFFFCC; padding: 1px; border: 1px solid #CC0000}
+.typeset .blank {display: inline-block; overflow: hidden; border: 0px none; width: 0px; height: 0px}
+.typeset .spacer {display: inline-block}
+#jsMath_hiddenSpan {visibility: hidden; position: absolute; top: 0px; left: 0px; line-height: normal; text-indent: 0px}
+#jsMath_message {position: fixed; bottom: 1px; left: 2px; background-color: #E6E6E6; border: solid 1px #959595; margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: small; width: auto}
+#jsMath_panel {position: fixed; bottom: 1.75em; right: 1.5em; padding: .8em 1.6em; background-color: #DDDDDD; border: outset 2px; z-index: 103; width: auto; color: black; font-size: 10pt; font-style: normal}
+#jsMath_panel .disabled {color: #888888}
+#jsMath_panel .infoLink {font-size: 85%}
+#jsMath_panel * {font-size: inherit; font-style: inherit; font-family: inherit; line-height: normal}
+#jsMath_panel div {background-color: inherit; color: inherit}
+#jsMath_panel span {background-color: inherit; color: inherit}
+#jsMath_panel td {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel tr {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel table {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit; height: auto; width: auto}
+#jsMath_button {position: fixed; bottom: 1px; right: 2px; background-color: white; border: solid 1px #959595; margin: 0px; padding: 0px 3px 1px 3px; z-index: 102; color: black; text-decoration: none; font-size: x-small; width: auto; cursor: hand}
+#jsMath_button * {padding: 0px; border: 0px; margin: 0px; line-height: normal; font-size: inherit; font-style: inherit; font-family: inherit}
+#jsMath_global {font-style: italic}
+#jsMath_noFont .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: small; width: auto}
+#jsMath_noFont .link {padding: 0px 5px 2px 5px; border: 2px outset; background-color: #E8E8E8; color: black; font-size: 80%; width: auto; cursor: hand}
+#jsMath_PrintWarning .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: x-small; width: auto}
+@media print {#jsMath_button {display: none}
+#jsMath_Warning {display: none}
+}
+@media screen {#jsMath_PrintWarning {display: none}
+}
+.typeset .scale {font-size: 120%}
+</style><style type="text/css">.typeset .math {font-style: normal}
+.typeset .typeset {font-style: normal}
+.typeset .icmr10 {font-family: serif}
+.typeset .icmmi10 {font-family: serif; font-style: italic}
+.typeset .icmbx10 {font-family: serif; font-weight: bold}
+.typeset .icmti10 {font-family: serif; font-style: italic}
+</style><link type="image/x-icon" rel="shortcut icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></head>
+    <body contenteditable="false"><div id="jsMath_message" title="" style="visibility: hidden;">Processing Math: Done</div><div id="jsMath_PrintWarning"><center><table><tbody><tr><td><div class="message">To print higher-resolution math symbols, click the<br>
+<b>Hi-Res Fonts for Printing</b> button on the jsMath control panel.<br>
+</div><div style="width:22em; height:1px"></div></td></tr></tbody></table></center><hr></div><div id="jsMath_button" title=" Open jsMath Control Panel "><span onclick="jsMath.Controls.Panel()">jsMath</span></div><div id="jsMath_panel" style="display: none;"></div><div id="jsMath_Hidden" style="visibility: hidden; position: absolute; top: 0px; left: 0px; border: 0px; padding: 0px; margin: 0px;"></div><div style="position: fixed; bottom: 1px; left: 2px; background-color: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: 75%; width: auto; visibility: hidden;"></div>
+    <a name="top"></a>
+    <p class="statements_title">Бабочки. День 4</p>
+    <p class="statements_summary"></p>
+    
+
+    <div class="statements_toc_alpha"><a name="toc"></a><p class="statements_chapter_title">Список задач</p><ul><li><a href="#ch3868"><b>Задача A.</b> Кондиционер</a></li><li><a href="#ch112748"><b>Задача B.</b> Кольцевая линия</a></li><li><a href="#ch3586"><b>Задача C.</b> Магнитные подушки</a></li><li><a href="#ch111226"><b>Задача D.</b> Театр начинается с актеров</a></li></ul></div><hr><div class="statements_chapter"><h1><a name="ch3868">Кондиционер</a></h1><p class="statements_chapter_title"><b>Задача A.</b> Кондиционер</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>
+В офисе, где работает программист Петр, установили кондиционер нового
+типа. Этот кондиционер отличается особой простотой в управлении. У
+кондиционера есть всего лишь два управляемых параметра: желаемая
+температура и режим работы.</p>
+<p>Кондиционер
+может работать в следующих четырех режимах:</p>
+
+<ul>
+	<li>«<span lang="en-US">freeze</span>»
+	— охлаждение. В этом режиме кондиционер может только уменьшать
+	температуру. Если температура в комнате и так не больше желаемой, то
+	он выключается.</li>
+	<li>«<span lang="en-US">heat</span>»
+	— нагрев. В этом режиме кондиционер может только увеличивать
+	температуру. Если температура в комнате и так не меньше желаемой, то
+	он выключается.</li>
+	<li>«<span lang="en-US">auto</span>»
+
+	— автоматический режим. В этом режиме кондиционер может как
+	увеличивать, так и уменьшать температуру в комнате до желаемой.</li>
+	<li>«<span lang="en-US">fan</span>»
+	— вентиляция. В этом режиме кондиционер осуществляет только
+	вентиляцию воздуха и не изменяет температуру в комнате.</li>
+</ul>
+<p>Кондиционер
+достаточно мощный, поэтому при настройке на правильный режим работы
+он за час доводит температуру в комнате до желаемой.</p>
+<p>Требуется
+написать программу, которая по заданной температуре в комнате <span lang="en-US"><i>t</i></span><sub><span lang="en-US"><i>room</i></span></sub>,
+установленным на кондиционере желаемой температуре <span lang="en-US"><i>t</i></span><sub><span lang="en-US"><i>cond</i></span></sub>
+
+и режиму работы определяет температуру, которая установится в комнате
+через час.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+
+<p>Первая
+строка входного файла содержит два целых числа <span lang="en-US"><i>t</i></span><sub><span lang="en-US"><i>room</i></span></sub>,
+и <span lang="en-US"><i>t</i></span><sub><span lang="en-US"><i>cond</i></span></sub>,
+разделенных ровно одним пробелом (–50<span lang="en-US">&nbsp;</span>≤<span lang="en-US">&nbsp;</span><span lang="en-US"><i>t</i></span><sub><span lang="en-US"><i>room</i></span></sub><span lang="en-US">&nbsp;</span>≤<span lang="en-US">&nbsp;</span>50,
+–50<span lang="en-US">&nbsp;</span>≤<span lang="en-US">&nbsp;</span><span lang="en-US"><i>t</i></span><sub><span lang="en-US"><i>cond</i></span></sub><span lang="en-US">&nbsp;</span>≤<span lang="en-US">&nbsp;</span>50).</p>
+
+<p>Вторая
+строка содержит одно слово, записанное строчными буквами латинского
+алфавита — режим работы кондиционера.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Выходной
+файл должен содержать одно целое число — температуру, которая
+установится в комнате через час.</p>
+
+    </div>
+
+
+   <div class="note">
+    <div class="section-title">
+	Примечание
+    </div>
+
+
+<p>В
+первом примере кондиционер находится в режиме нагрева. Через час он
+нагреет комнату до желаемой температуры в 20 градусов.</p>
+<p>Во
+втором примере кондиционер находится в режиме охлаждения. Поскольку
+температура в комнате ниже, чем желаемая, кондиционер самостоятельно
+выключается и температура в комнате не поменяется.</p><p>За каждый из 20 тестов программа получает 2 балла; Еще 60 баллов получает программа при прохождении всех тестов.</p>
+
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">10 20
+heat
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">20
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">10 20
+freeze
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">10
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch112748">Кольцевая линия</a></h1><p class="statements_chapter_title"><b>Задача B.</b> Кольцевая линия</p><div class="problem-statement">
+   <div class="legend">
+    <p>
+	В городе, в котором живут друзья Андрей и Борис, метро состоит из единственной 
+кольцевой линии, вдоль которой на равном расстоянии друг от друга расположены n
+станций, пронумерованных от 1 до <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span>. Участок линии метро между двумя соседними 
+станциями называется перегоном.<br><br>
+Поезда по кольцевой линии двигаются как по часовой стрелке, так и против часовой 
+стрелки, поэтому чтобы добраться от одной станции до другой, пассажир может выбрать то 
+направление, в котором требуется проехать меньше перегонов. Минимальное число 
+перегонов, которое необходимо проехать, чтобы добраться от одной станции до другой, 
+назовем расстоянием между станциями.<br><br>
+Друзья заметили, что выполняется следующее условие: если загадать некоторую 
+станцию <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span> и выписать для нее два числа: <span class="typeset"><nobr><span class="scale"><span class="icmmi10">D</span><span style="position: relative; top:0.15em;"><span class="size2"><span class="icmmi10">a</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span> — расстояние от станции, на которой живет 
+Андрей, до станции <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">D</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">b</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> — расстояние от станции, на которой живет Борис, до станции <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span>, 
+то полученная пара чисел [<span class="typeset"><nobr><span class="scale"><span class="icmmi10">D</span><span style="position: relative; top:0.15em;"><span class="size2"><span class="icmmi10">a</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">D</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">b</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span>] будет однозначно задавать станцию <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span>.<br><br>
+Например, если <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> = 4, Андрей живет на станции 1, а Борис живет на станции 2, то 
+станция 1 задается парой [0, 1], станция 2 — парой [1, 0], станция 3 — парой [2, 1] и 
+станция 4 — парой [1, 2].<br><br>
+Их одноклассник Сергей живет в соседнем городе и не знает, на каких станциях 
+живут Андрей и Борис. Чтобы найти друзей, он заинтересовался, сколько существует 
+вариантов пар станций <span class="typeset"><nobr><span class="scale"><span class="icmmi10">A</span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">B</span><span class="spacer" style="margin-left:0.050em"></span></span></nobr></span>, таких что если Андрей живет на станции <span class="typeset"><nobr><span class="scale"><span class="icmmi10">A</span></span></nobr></span>, а Борис — на 
+станции <span class="typeset"><nobr><span class="scale"><span class="icmmi10">B</span><span class="spacer" style="margin-left:0.050em"></span></span></nobr></span>, то выполняется описанное выше условие.<br><br>
+Требуется написать программу, которая по числу станций n на кольцевой линии 
+определяет искомое количество вариантов.	
+    </p>
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+    <p>
+Первая строка входного файла содержит одно целое число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> (3 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> ≤ 40 000).
+    </p>
+   </div>
+
+
+ <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+    <p>
+	Выходной файл должен содержать одно число — искомое количество вариантов.	
+    </p>
+
+ </div>
+
+
+   <div class="output-specification">
+    <div class="section-title">
+    Пояснения к примерам
+    </div>
+    <p>
+	В первом примере подходят следующие варианты:<br>
+* Андрей живет на станции 1, а Борис на станции 2;<br>
+* Андрей живет на станции 1, а Борис на станции 4;<br>
+* Андрей живет на станции 2, а Борис на станции 1;<br>
+* Андрей живет на станции 2, а Борис на станции 3;<br>
+* Андрей живет на станции 3, а Борис на станции 2;<br>
+* Андрей живет на станции 3, а Борис на станции 4;<br>
+* Андрей живет на станции 4, а Борис на станции 1;<br>
+* Андрей живет на станции 4, а Борис на станции 3.<br>
+    </p>
+
+ </div>
+
+
+<div class="output-specification">
+    <div class="section-title">
+     Система оценки и описание подзадач
+    </div>
+<br>
+    <p>
+	В этой задаче три подзадачи. Баллы за подзадачу начисляются только в случае, если 
+все тесты для данной подзадачи успешно пройдены.<br>
+<b>Подзадача 1 (25 баллов)</b><br>
+3 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> ≤ 50.<br>
+<b>Подзадача 2 (25 баллов)</b><br>
+3 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> ≤ 500.<br>
+<b>Подзадача 3 (50 баллов)</b><br>
+3 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> ≤ 40000.<br>
+    </p>
+
+ </div><div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">4
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">8
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">20
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3586">Магнитные подушки</a></h1><p class="statements_chapter_title"><b>Задача C.</b> Магнитные подушки</p><div class="problem-statement"><div class="legend"><p>Город будущего застроен небоскребами, для передвижения между которыми и парковки транспорта многие тройки небоскребов соединены треугольной подушкой из однополярных магнитов. Каждая подушка соединяет ровно 3 небоскреба и вид сверху на нее представляет собой треугольник, с вершинами в небоскребах. Это позволяет беспрепятственно передвигаться между соответствующими небоскребами. Подушки можно делать на разных уровнях, поэтому один небоскреб может быть соединен различными подушками с парами других, причем два небоскреба могут соединять несколько подушек (как с разными третьими небоскребами, так и с одинаковым). Например, возможны две подушки на разных уровнях между небоскребами 1, 2 и 3, и, кроме того, магнитная подушка между 1, 2, 5.</p><p>Система магнитных подушек организована так, что с их помощью можно добираться от одного небоскреба, до любого другого в этом городе (с одной подушки на другую можно перемещаться внутри небоскреба), но поддержание каждой из них требует больших затрат энергии. </p><p>Требуется написать программу, которая определит, какие из магнитных подушек нельзя удалять из подушечной системы города, так как удаление даже только этой подушки может привести к тому, что найдутся небоскребы из которых теперь нельзя добраться до некоторых других небоскребов, и жителям станет очень грустно.</p></div><p></p><p></p><div class="input-specification"><div class="section-title">Входные данные</div><p></p><p>В первой строке входного файла находятся числа <span class="tex-span"><i>N</i></span> и <span class="tex-span"><i>M</i></span>&nbsp;— количество небоскребов в городе и количество работающих магнитных подушек соответственно (<span class="tex-span">3 ≤ <i>N</i> ≤ 100000</span>, <span class="tex-span">1 ≤ <i>M</i> ≤ 100000</span>). В каждой из следующих <span class="tex-span"><i>M</i></span> строк через пробел записаны три числа&nbsp;— номера небоскребов, соединенных подушкой. Небоскребы пронумерованы от 1 до <span class="tex-span"><i>N</i></span>. Гарантируется, что имеющиеся воздушные подушки позволяют перемещаться от одного небоскреба до любого другого. </p></div><p></p><p></p><div class="output-specification"><div class="section-title">Выходные данные</div><p></p><p>Выведите в выходной файл сначала количество тех магнитных подушек, отключение которых невозможно без нарушения сообщения в городе, а потом их номера. Нумерация должна соответствовать тому порядку, в котором подушки перечислены во входном файле. Нумерация начинается с единицы.</p><p>Решения, корректно работающие для&nbsp;<span class="tex-span" style="font-size: 17.5px;">3 ≤ <i>N</i> ≤ 1000</span>,&nbsp;<span class="tex-span" style="font-size: 17.5px;">1 ≤ <i>M</i> ≤ 1000 могут получить до 42 баллов.</span></p></div><p></p>
+
+ </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 1
+1 2 3
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1
+1 
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 2
+1 2 3
+3 2 1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">0
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5 4
+1 2 3
+2 4 3
+1 2 4
+3 5 1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1
+4 
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch111226">Театр начинается с актеров</a></h1><p class="statements_chapter_title"><b>Задача D.</b> Театр начинается с актеров</p><div class="problem-statement-preview"><div class="problem-statement"><div class="legend"><p>Участники олимпиады пришли в казанский театр на спектакль, где играют <span class="tex-span"><i>N</i></span> неизвестных для них актеров. В фойе театра висят портреты всех актеров труппы, которая в полном составе задействована в спектакле. Портреты не подписаны. Зрителям раздали программки, в которых для каждого действия спектакля приводится список фамилий участвующих в нем актеров, но не указаны их роли. Театрал Виталий решил узнать, как выглядит каждый из актеров, упомянутых в программке. Для этого в антракте после каждого действия он выходил в фойе и сопоставлял портреты с увиденными актерами. Требуется написать программу, которая по заданному числу актеров <span class="tex-span"><i>N</i></span> и списку фамилий актеров, участвующих в каждом из <span class="tex-span"><i>M</i></span> действий, определяет номер действия, после которого впервые становится возможным установить соответствие между фамилией актера из программки и его портретом.</p></div><p></p><p></p><div class="input-specification"><div class="section-title">Входные данные</div><p></p><p>Первая строка входного файла содержит два натуральных числа <span class="tex-span"><i>N</i></span> – число актеров и <span class="tex-span"><i>M</i></span> – количество действий в спектакле (<span class="tex-span">1 &lt; <i>N</i> ≤ 100000, 1 ≤ <i>M</i> ≤ 100 000</span>). В каждой из следующих <span class="tex-span"><i>M</i></span> строк сначала записано количество актеров <span class="tex-span"><i>K</i><sub class="lower-index"><i>i</i></sub></span>, участвующих в <span class="tex-span"><i>i</i></span>–ом действии (<span class="tex-span">1 ≤ <i>K</i><sub class="lower-index"><i>i</i></sub> ≤ <i>N</i>, <i>K</i><sub class="lower-index">1</sub> + <i>K</i><sub class="lower-index">2</sub> + ... + <i>K</i><sub class="lower-index"><i>M</i></sub> ≤ 100 000</span>), а затем <span class="tex-span"><i>K</i><sub class="lower-index"><i>i</i></sub></span> различных натуральных чисел, не превосходящих <span class="tex-span"><i>N</i></span>, обозначающих фамилии этих актеров. Соседние числа в каждой строке разделены пробелом.</p></div><p></p><p></p><div class="output-specification"><div class="section-title">Выходные данные</div><p></p><p>Выходной файл должен содержать одну строку, состоящую из <span class="tex-span"><i>N</i></span> записанных через пробел чисел. <span class="tex-span"><i>i</i></span>-е число этой строки – это номер действия, после которого впервые становится возможным установить соответствие между <span class="tex-span"><i>i</i></span>–м актером и его портретом. Если к концу спектакля установить соответствие между каким-либо актером и его портретом так и не удалось, то соответствующее число в строке должно быть равно нулю.</p></div><p></p><p></p><div class="note"><div class="section-title">Примечание</div><p></p><p>В первом примере три актера участвуют в спектакле с тремя действиями. В первом действии участвуют два актера с номерами 1 и 2. Так как актеров всего трое, то после первого акта становится понятно, какой портрет соответствует актеру с номером 3, поэтому третье число строки выходного файла равно 1. Во втором действии участвуют два актера с номерами 3 и 2. Поскольку только второй актер участвовал и в первом, и во втором действиях, то его портрет можно определить после второго действия. А так как портретов всего три, то после второго действия можно установить, что последний портрет соответствует актеру номер 1. Третье действие на ответ не влияет.</p><p>Данная задача содержит три подзадачи. Для оценки каждой подзадачи используется своя группа тестов. Баллы за подзадачу начисляются только в том случае, если все тесты из этой группы пройдены.</p><p></p><ol type="1"><p></p><p></p><li> (оценивается в 30 баллов) Количество актеров <span class="tex-span"><i>N</i></span> не превосходит <span class="tex-span">100</span>, количество действий <span class="tex-span"><i>M</i></span> не превосходит <span class="tex-span">100, <i>K</i><sub class="lower-index">1</sub> + <i>K</i><sub class="lower-index">2</sub> + ... + <i>K</i><sub class="lower-index"><i>M</i></sub> ≤ 100</span>.<p></p><p></p></li><li> (оценивается в 30 баллов) Количество актеров <span class="tex-span"><i>N</i></span> не превосходит <span class="tex-span">10 000</span>, количество действий <span class="tex-span"><i>M</i></span> не превосходит <span class="tex-span">10 000, <i>K</i><sub class="lower-index">1</sub> + <i>K</i><sub class="lower-index">2</sub> + ... + <i>K</i><sub class="lower-index"><i>M</i></sub> ≤ 10 000</span>.<p></p><p></p></li><li> (оценивается в 40 баллов) Количество актеров <span class="tex-span"><i>N</i></span> не превосходит <span class="tex-span">100 000</span>, количество действий <span class="tex-span"><i>M</i></span> не превосходит <span class="tex-span">100 000, <i>K</i><sub class="lower-index">1</sub> + <i>K</i><sub class="lower-index">2</sub> + ... + <i>K</i><sub class="lower-index"><i>M</i></sub> ≤ 100 000</span>.<p></p><p></p></li></ol></div></div><p></p> </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 3
+2 1 2
+2 3 2
+2 1 2
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">2 2 1
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5 3
+3 1 2 3
+3 2 1 3
+2 1 3
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">0 3 0 0 0
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">4 3
+1 1
+1 3
+1 2
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1 3 2 3
+</pre></div></div></div></div></div> </div><autoscroll></autoscroll></body></html>

@@ -1,0 +1,681 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!--
+ Archive processed by SingleFile 
+ url: http://informatics.mccme.ru/moodle/mod/statements/print3.php?id=26862 
+ saved date: Fri Aug 18 2017 22:10:47 GMT+0300 (MSK) 
+--><head>
+      <title>Параллель D. Массивы 2.0</title>
+      <style type="text/css">.problem-statement {
+    margin: 0.5em;
+    font-family: verdana;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.problem-statement p {
+    margin: 0 0 1em 0;
+}
+
+.problem-statement .header {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    margin-bottom: 0.5em;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    font-family: arial;
+}
+
+.problem-statement ul {
+    list-style: disc;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.problem-statement .property-title {
+    display: inline;
+}
+
+.problem-statement .property-title:after {
+    content: ": ";
+}
+
+.problem-statement .time-limit, .problem-statement .memory-limit, .problem-statement .input-file, .problem-statement .output-file {
+    margin: 0 auto;
+}
+
+.problem-statement .legend {
+    margin-bottom: 1em;
+}
+
+.problem-statement .section-title {
+    font-family: arial;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+.problem-statement .input-specification,
+    .problem-statement .output-specification,
+    .problem-statement .sample-tests,
+    .problem-statement .author,
+    .problem-statement .resource,
+    .problem-statement .date {
+    /*margin-bottom: 1em;*/
+}
+
+.problem-statement .output-specification {
+    margin-bottom: 1em;
+}
+
+.problem-statement .sample-tests .sample-test {
+}
+
+.problem-statement .sample-tests .input, .problem-statement .sample-tests .output {
+    border: 1px solid #888;
+}
+
+.problem-statement .sample-tests .output {
+    margin-bottom: 1em;
+    position: relative;
+    top: -1px;
+}
+
+.problem-statement .sample-tests pre {
+    line-height: 1.25em;
+    padding: 0.25em;
+    margin: 0;
+    background-color: #efefef;
+}
+
+.problem-statement .sample-tests .title {
+    font-family: arial;
+    padding: 0.25em;
+    border-bottom: 1px solid #888;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.problem-statement .tex-formula {
+    vertical-align: middle;
+    margin: 0;
+    border:medium none;
+    position: relative;
+    bottom: 2px;
+}
+
+.problem-statement .tex-span {
+    font-size: 125%;
+    font-family: times new roman;
+}
+
+.problem-statement .tex-font-size-tiny {
+    font-size: 70%;
+}
+
+.problem-statement .tex-font-size-script {
+    font-size: 75%;
+}
+
+.problem-statement .tex-font-size-footnotes {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-small {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-normal {
+    font-size: 100%;
+}
+
+.problem-statement .tex-font-size-large-1 {
+    font-size: 115%;
+}
+
+.problem-statement .tex-font-size-large-2 {
+    font-size: 130%;
+}
+
+.problem-statement .tex-font-size-large-3 {
+    font-size: 145%;
+}
+
+.problem-statement .tex-font-size-huge-1 {
+    font-size: 175%;
+}
+
+.problem-statement .tex-font-size-huge-2 {
+    font-size: 200%;
+}
+
+.problem-statement .tex-font-style-rm {
+}
+
+.problem-statement .tex-font-style-sf {
+    font-family: arial;
+}
+
+.problem-statement .tex-font-style-tt {
+    font-size: 110%;
+    font-family: courier new;
+}
+
+.problem-statement .tex-font-style-md {
+}
+
+.problem-statement .tex-font-style-bf {
+    font-weight: bold;
+}
+
+.problem-statement .tex-font-style-up {
+}
+
+.problem-statement .tex-font-style-it {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sl {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sc {
+    text-transform: uppercase;
+}
+
+.problem-statement .tex-graphics {
+    display: block;
+}
+</style>      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=">
+      
+      <meta name="description" content="Параллель D. Массивы 2.0">
+      <style rel="stylesheet" type="text/css" data-href="http://informatics.mccme.ru/moodle/mod/statements/statements_print.css">/* $Id: statements_print.css,v 1.1 2006/03/12 18:39:59 skodak Exp $ */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 0px;
+    font-family: "Times New Roman", Times, serif;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+.statements_title {
+    margin-left: -40px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.statements_summary {
+    margin-left: -40px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.statements_chapter_title {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: bold;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+
+    margin-left: -40px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.statements_chapter {
+    page-break-before: always;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* link rewriting for mozilla - collides with filters :-( */
+/*
+a[href^="http://"]:after, a[href^="ftp://"]:after {
+    content: " ["attr(href)"]";
+}
+*/
+
+/* just some hack - ignore user defined <font> */
+font {
+    color: #000000;
+    background-color: #EEEEEE;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* ===== TOC numbering styles ===== */
+
+/* numbering == NONE */
+.statements_toc_none {
+    page-break-before: always;
+}
+.statements_toc_none ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_none li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == NUMBERED */
+.statements_toc_numbered {
+    page-break-before: always;
+}
+.statements_toc_numbered ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_numbered li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == BULLETS */
+.statements_toc_bullets {
+    page-break-before: always;
+}
+.statements_toc_bullets ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_bullets ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_bullets li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_bullets li li {
+    margin-top: 0px;
+    list-style: circle;
+}
+
+/* numbering == INDENTED */
+.statements_toc_indented {
+    page-break-before: always;
+}
+.statements_toc_indented ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_indented ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_indented li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_indented li li {
+    margin-top: 0px;
+    list-style: none;
+}
+</style>
+    <style type="text/css">#jsMath_test {font-size:200%}
+</style><style type="text/css">.math {font-family: serif; font-style: normal; font-weight: normal}
+.typeset {font-family: serif; font-style: normal; font-weight: normal; line-height: normal; text-indent: 0px}
+.typeset .normal {font-family: serif; font-style: normal; font-weight: normal}
+div.typeset {text-align: center; margin: 1em 0px}
+span.typeset {text-align: left}
+.typeset span {text-align: left; border: 0px; margin: 0px; padding: 0px}
+a .typeset img, .typeset a img {border: 0px; border-bottom: 1px solid blue;}
+.typeset .size0 {font-size: 50%}
+.typeset .size1 {font-size: 60%}
+.typeset .size2 {font-size: 70%}
+.typeset .size3 {font-size: 85%}
+.typeset .size4 {font-size: 100%}
+.typeset .size5 {font-size: 120%}
+.typeset .size6 {font-size: 144%}
+.typeset .size7 {font-size: 173%}
+.typeset .size8 {font-size: 207%}
+.typeset .size9 {font-size: 249%}
+.typeset .cmr10 {font-family: jsMath-cmr10, serif}
+.typeset .cmbx10 {font-family: jsMath-cmbx10, jsMath-cmr10}
+.typeset .cmti10 {font-family: jsMath-cmti10, jsMath-cmr10}
+.typeset .cmmi10 {font-family: jsMath-cmmi10}
+.typeset .cmsy10 {font-family: jsMath-cmsy10}
+.typeset .cmex10 {font-family: jsMath-cmex10}
+.typeset .textit {font-family: serif; font-style: italic}
+.typeset .textbf {font-family: serif; font-weight: bold}
+.typeset .link {text-decoration: none}
+.typeset .error {font-size: 90%; font-style: italic; background-color: #FFFFCC; padding: 1px; border: 1px solid #CC0000}
+.typeset .blank {display: inline-block; overflow: hidden; border: 0px none; width: 0px; height: 0px}
+.typeset .spacer {display: inline-block}
+#jsMath_hiddenSpan {visibility: hidden; position: absolute; top: 0px; left: 0px; line-height: normal; text-indent: 0px}
+#jsMath_message {position: fixed; bottom: 1px; left: 2px; background-color: #E6E6E6; border: solid 1px #959595; margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: small; width: auto}
+#jsMath_panel {position: fixed; bottom: 1.75em; right: 1.5em; padding: .8em 1.6em; background-color: #DDDDDD; border: outset 2px; z-index: 103; width: auto; color: black; font-size: 10pt; font-style: normal}
+#jsMath_panel .disabled {color: #888888}
+#jsMath_panel .infoLink {font-size: 85%}
+#jsMath_panel * {font-size: inherit; font-style: inherit; font-family: inherit; line-height: normal}
+#jsMath_panel div {background-color: inherit; color: inherit}
+#jsMath_panel span {background-color: inherit; color: inherit}
+#jsMath_panel td {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel tr {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel table {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit; height: auto; width: auto}
+#jsMath_button {position: fixed; bottom: 1px; right: 2px; background-color: white; border: solid 1px #959595; margin: 0px; padding: 0px 3px 1px 3px; z-index: 102; color: black; text-decoration: none; font-size: x-small; width: auto; cursor: hand}
+#jsMath_button * {padding: 0px; border: 0px; margin: 0px; line-height: normal; font-size: inherit; font-style: inherit; font-family: inherit}
+#jsMath_global {font-style: italic}
+#jsMath_noFont .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: small; width: auto}
+#jsMath_noFont .link {padding: 0px 5px 2px 5px; border: 2px outset; background-color: #E8E8E8; color: black; font-size: 80%; width: auto; cursor: hand}
+#jsMath_PrintWarning .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: x-small; width: auto}
+@media print {#jsMath_button {display: none}
+#jsMath_Warning {display: none}
+}
+@media screen {#jsMath_PrintWarning {display: none}
+}
+.typeset .scale {font-size: 120%}
+</style><style type="text/css">.typeset .math {font-style: normal}
+.typeset .typeset {font-style: normal}
+.typeset .icmr10 {font-family: serif}
+.typeset .icmmi10 {font-family: serif; font-style: italic}
+.typeset .icmbx10 {font-family: serif; font-weight: bold}
+.typeset .icmti10 {font-family: serif; font-style: italic}
+</style><link type="image/x-icon" rel="shortcut icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></head>
+    <body><div id="jsMath_message" title="" style="visibility: hidden;">Processing Math: Done</div><div id="jsMath_PrintWarning"><center><table><tbody><tr><td><div class="message">To print higher-resolution math symbols, click the<br>
+<b>Hi-Res Fonts for Printing</b> button on the jsMath control panel.<br>
+</div><div style="width:22em; height:1px"></div></td></tr></tbody></table></center><hr></div><div id="jsMath_button" title=" Open jsMath Control Panel "><span onclick="jsMath.Controls.Panel()">jsMath</span></div><div id="jsMath_panel" style="display: none;"></div><div id="jsMath_Hidden" style="visibility: hidden; position: absolute; top: 0px; left: 0px; border: 0px; padding: 0px; margin: 0px;"></div><div style="position: fixed; bottom: 1px; left: 2px; background-color: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: 75%; width: auto; visibility: hidden;"></div>
+    <a name="top"></a>
+    <p class="statements_title">Параллель D. Массивы 2.0</p>
+    <p class="statements_summary"></p>
+    
+
+    <div class="statements_toc_alpha"><a name="toc"></a><p class="statements_chapter_title">Список задач</p><ul><li><a href="#ch223"><b>Задача A.</b> Линейный поиск - 1</a></li><li><a href="#ch225"><b>Задача B.</b> Ближайшее число</a></li><li><a href="#ch229"><b>Задача C.</b> Максимальный - вперед</a></li><li><a href="#ch233"><b>Задача D.</b> Пузырьковая сортировка</a></li><li><a href="#ch67"><b>Задача E.</b> Есть ли два элемента с одинаковыми знаками</a></li><li><a href="#ch3177"><b>Задача F.</b> Большой сдвиг</a></li><li><a href="#ch3176"><b>Задача G.</b> Ферзи</a></li></ul></div><hr><div class="statements_chapter"><h1><a name="ch223">Линейный поиск - 1</a></h1><p class="statements_chapter_title"><b>Задача A.</b> Линейный поиск - 1</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Напишите программу, которая определяет, сколько раз встречается заданное число <em>x </em>в данном массиве. </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+ <p>В первой строке задается одно натуральное число <em>N</em>, не превосходящее 1000 – размер массива. </p> <p>Во второй строке вводятся <em>N</em> чисел – элементы массива (целые числа, не превосходящие по модулю 1000). </p> <p>В третьей строке содержится одно целое число <em>x </em>, не превосходящее по модулю 1000. </p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+ <p>Вывести одно число – сколько раз встречается <em>x </em>в данном массиве. </p> 
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5
+1 2 3 4 5
+3
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch225">Ближайшее число</a></h1><p class="statements_chapter_title"><b>Задача B.</b> Ближайшее число</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Напишите программу, которая находит в массиве элемент, самый близкий по величине к&nbsp; данному числу. </p> 
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+ <p>В первой строке задается одно натуральное число <em>N</em>, не превосходящее 1000 – размер массива. </p> <p>Во второй строке содержатся <em>N</em> чисел – элементы массива (целые числа, не превосходящие по модулю 1000). </p> <p>В третьей строке вводится одно целое число <em>x</em>, не превосходящее по модулю 1000. </p>
+
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+ <p>Вывести значение элемента массива, ближайшее к <em>x</em>. Если таких чисел несколько, выведите любое из них. </p> 
+
+    </div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5
+1 2 3 4 5
+6
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">5
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5
+5 4 3 2 1
+3
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch229">Максимальный - вперед</a></h1><p class="statements_chapter_title"><b>Задача C.</b> Максимальный - вперед</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Требуется поменять местами первый элемент массива с максимальным.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>В первой строке вводится одно натуральное число, не превосходящее 1000 – размер массива. Во второй строке&nbsp;задаются <span lang="en-US"><em>N</em></span> чисел – элементы массива (целые числа, не превосходящие по модулю 1000).</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Вывести получившийся массив. Если максимальных элементов несколько, требуется поменять первый из них.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5
+1 2 3 4 5
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">5 2 3 4 1
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch233">Пузырьковая сортировка</a></h1><p class="statements_chapter_title"><b>Задача D.</b> Пузырьковая сортировка</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Требуется отсортировать массив по неубыванию методом "пузырька".</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>В первой строке вводится одно натуральное число, не превосходящее 1000 – размер массива. Во второй строке&nbsp;задаются <span lang="en-US"><em>N</em></span> чисел – элементы массива (целые числа, не превосходящие по модулю 1000).</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Вывести получившийся массив.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5
+5 4 3 2 1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1 2 3 4 5 
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch67">Есть ли два элемента с одинаковыми знаками</a></h1><p class="statements_chapter_title"><b>Задача E.</b> Есть ли два элемента с одинаковыми знаками</p><div class="problem-statement">
+   <div class="legend">
+    <p>
+	Дан массив, состоящий из целых чисел. Напишите программу, которая определяет, есть ли в массиве пара соседних элементов с одинаковыми знаками.
+    </p>
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+    <p>
+	Сначала задано число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> — количество элементов в массиве (<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAQAAACxtDVnAAAAAmJLR0QA/4ePzL8AAACDSURBVHjadY+hEQIxEEXfZq6KCCQKlRJOxdJA+kFQQmqIZc5cCTFnUwGGDhaTHBwh+9W+P//vrCj9yI2z6WCUwlOv6C4skUKo2w4TucFq4FjJeOVbBrhwYtHHz7EaDBQi9lClHzOTmsmxGU9mxSnSPyiOOy/59zmAGXAmEMfc8W2YeANOykjYbhilhAAAAABJRU5ErkJggg==" style=" width:12px; vertical-align:-3px; margin-right:0.059em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAQAAACxtDVnAAAAAmJLR0QA/4ePzL8AAACDSURBVHjadY+hEQIxEEXfZq6KCCQKlRJOxdJA+kFQQmqIZc5cCTFnUwGGDhaTHBwh+9W+P//vrCj9yI2z6WCUwlOv6C4skUKo2w4TucFq4FjJeOVbBrhwYtHHz7EaDBQi9lClHzOTmsmxGU9mxSnSPyiOOy/59zmAGXAmEMfc8W2YeANOykjYbhilhAAAAABJRU5ErkJggg==" style=" width:12px; vertical-align:-3px; margin-right:0.059em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">0000</span></span></nobr></span>). Далее через пробел записаны <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> чисел — элементы массива. Массив состоит из целых чисел.
+    </p>
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+    <p>
+	Необходимо вывести слово <i>YES</i>, если существует пара соседних элементов с одинаковыми знаками. В противном случае следует вывести слово <i>NO</i>.
+    </p>
+
+   </div>
+ </div><div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5
+1 -3 4 -2 1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">NO
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3177">Большой сдвиг</a></h1><p class="statements_chapter_title"><b>Задача F.</b> Большой сдвиг</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Дан список из <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> (<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAQAAACxtDVnAAAAAmJLR0QA/4ePzL8AAACDSURBVHjadY+hEQIxEEXfZq6KCCQKlRJOxdJA+kFQQmqIZc5cCTFnUwGGDhaTHBwh+9W+P//vrCj9yI2z6WCUwlOv6C4skUKo2w4TucFq4FjJeOVbBrhwYtHHz7EaDBQi9lClHzOTmsmxGU9mxSnSPyiOOy/59zmAGXAmEMfc8W2YeANOykjYbhilhAAAAABJRU5ErkJggg==" style=" width:12px; vertical-align:-3px; margin-right:0.059em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAQAAACxtDVnAAAAAmJLR0QA/4ePzL8AAACDSURBVHjadY+hEQIxEEXfZq6KCCQKlRJOxdJA+kFQQmqIZc5cCTFnUwGGDhaTHBwh+9W+P//vrCj9yI2z6WCUwlOv6C4skUKo2w4TucFq4FjJeOVbBrhwYtHHz7EaDBQi9lClHzOTmsmxGU9mxSnSPyiOOy/59zmAGXAmEMfc8W2YeANOykjYbhilhAAAAABJRU5ErkJggg==" style=" width:12px; vertical-align:-3px; margin-right:0.059em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">00000</span></span></nobr></span>) целых чисел и число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span>
+(<span class="typeset"><nobr><span class="scale"><span style="position:relative;"><span style="position:absolute; top:0em; left:0em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAASCAQAAAA0q6wKAAAAAmJLR0QA/4ePzL8AAAAkSURBVHjaY/jP8J+BYS7Df4b/DAx3mRgYGBgYGGhOfYLYJwUApOEIn4hS9ywAAAAASUVORK5CYII=" style="height:18px; width:3px; vertical-align:-5px; margin-right:0.098em;"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAASCAQAAAA0q6wKAAAAAmJLR0QA/4ePzL8AAAAkSURBVHjaY/jP8J+BYS7Df4b/DAx3mRgYGBgYGGhOfYLYJwUApOEIn4hS9ywAAAAASUVORK5CYII=" style="height:18px; width:3px; vertical-align:-5px; margin-right:0.098em;"><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAQAAADheaTUAAAAAmJLR0QA/4ePzL8AAABVSURBVHjabY9BDcBACAQHG5ipE1Rg4kQgDRUVQD9Nc5SDB2FhM1kpTiVKjcZI4i86SRTFLi6S9W3vCBJv3gLnxgapQOf/xuiEBu/HmcJJApVTcjGuB24IYsHkLWyaAAAAAElFTkSuQmCC" style=" width:12px; vertical-align:-1px; margin-right:0.059em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">00000</span>&nbsp;</span><span class="blank" style="width:5.649em;height:0.951em;"></span></span><span class="blank" style="height:1.1em;vertical-align:-0.3em"></span></span></nobr></span>).
+Циклически сдвиньте список на <span class="typeset"><nobr><span class="scale"><span style="position:relative;"><span style="position:absolute; top:0em; left:0em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAASCAQAAAA0q6wKAAAAAmJLR0QA/4ePzL8AAAAkSURBVHjaY/jP8J+BYS7Df4b/DAx3mRgYGBgYGGhOfYLYJwUApOEIn4hS9ywAAAAASUVORK5CYII=" style="height:18px; width:3px; vertical-align:-5px; margin-right:0.098em;"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAASCAQAAAA0q6wKAAAAAmJLR0QA/4ePzL8AAAAkSURBVHjaY/jP8J+BYS7Df4b/DAx3mRgYGBgYGGhOfYLYJwUApOEIn4hS9ywAAAAASUVORK5CYII=" style="height:18px; width:3px; vertical-align:-5px; margin-right:0.098em;">&nbsp;</span><span class="blank" style="width:1.308em;height:0.951em;"></span></span><span class="blank" style="height:1.1em;vertical-align:-0.3em"></span></span></nobr></span> элементов вправо,
+если <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span> – положительное и влево, если отрицательное
+число.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+ 
+<p>Программа получает на вход список целых чисел, затем число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span>.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+    </div>
+
+
+   <div class="note">
+    <div class="section-title">
+	Примечание
+    </div>
+
+ 
+<p>Решение должно иметь сложность <span class="typeset"><nobr><span class="scale"><span class="icmmi10">O</span><span class="spacer" style="margin-left:0.027em"></span><span class="icmr10">(</span><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span><span class="icmr10">)</span></span></nobr></span>, то есть не должно зависеть от <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span>.
+Дополнительным списком пользоваться нельзя.</p>
+ 
+ 
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5 3 7 4 6
+3
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">7 4 6 5 3 
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3176">Ферзи</a></h1><p class="statements_chapter_title"><b>Задача G.</b> Ферзи</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Известно, что на доске 8×8 можно расставить 8 ферзей так, чтобы они не били
+друг друга. Вам дана расстановка 8 ферзей на доске, определите, есть ли среди них
+пара бьющих друг друга.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+ 
+
+<p>Программа получает на вход восемь пар чисел, каждое число от 1 до 8 - координаты 8 ферзей.</p>
+
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Если ферзи не бьют друг друга, выведите слово <code>NO</code>, иначе выведите <code>YES</code>.</p>
+
+    </div>
+    </div>
+
+ 
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1 7
+2 4
+3 2
+4 8
+5 6
+6 1
+7 3
+8 5
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">NO
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1 8
+2 7
+3 6
+4 5
+5 4
+6 3
+7 2
+8 1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">YES
+</pre></div></div></div></div></div> </body></html>

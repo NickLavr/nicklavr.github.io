@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!--
+ Archive processed by SingleFile 
+ url: http://informatics.mccme.ru/moodle/mod/statements/print3.php?id=30054 
+ saved date: Thu Jan 04 2018 22:45:32 GMT+0300 (MSK) 
+--><head>
+      <title>Параллель C. Рекурсия</title>
+      <style type="text/css">.problem-statement {
+    margin: 0.5em;
+    font-family: verdana;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.problem-statement p {
+    margin: 0 0 1em 0;
+}
+
+.problem-statement .header {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    margin-bottom: 0.5em;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    font-family: arial;
+}
+
+.problem-statement ul {
+    list-style: disc;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.problem-statement .property-title {
+    display: inline;
+}
+
+.problem-statement .property-title:after {
+    content: ": ";
+}
+
+.problem-statement .time-limit, .problem-statement .memory-limit, .problem-statement .input-file, .problem-statement .output-file {
+    margin: 0 auto;
+}
+
+.problem-statement .legend {
+    margin-bottom: 1em;
+}
+
+.problem-statement .section-title {
+    font-family: arial;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+.problem-statement .input-specification,
+    .problem-statement .output-specification,
+    .problem-statement .sample-tests,
+    .problem-statement .author,
+    .problem-statement .resource,
+    .problem-statement .date {
+    /*margin-bottom: 1em;*/
+}
+
+.problem-statement .output-specification {
+    margin-bottom: 1em;
+}
+
+.problem-statement .sample-tests .sample-test {
+}
+
+.problem-statement .sample-tests .input, .problem-statement .sample-tests .output {
+    border: 1px solid #888;
+}
+
+.problem-statement .sample-tests .output {
+    margin-bottom: 1em;
+    position: relative;
+    top: -1px;
+}
+
+.problem-statement .sample-tests pre {
+    line-height: 1.25em;
+    padding: 0.25em;
+    margin: 0;
+    background-color: #efefef;
+}
+
+.problem-statement .sample-tests .title {
+    font-family: arial;
+    padding: 0.25em;
+    border-bottom: 1px solid #888;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.problem-statement .tex-formula {
+    vertical-align: middle;
+    margin: 0;
+    border:medium none;
+    position: relative;
+    bottom: 2px;
+}
+
+.problem-statement .tex-span {
+    font-size: 125%;
+    font-family: times new roman;
+}
+
+.problem-statement .tex-font-size-tiny {
+    font-size: 70%;
+}
+
+.problem-statement .tex-font-size-script {
+    font-size: 75%;
+}
+
+.problem-statement .tex-font-size-footnotes {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-small {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-normal {
+    font-size: 100%;
+}
+
+.problem-statement .tex-font-size-large-1 {
+    font-size: 115%;
+}
+
+.problem-statement .tex-font-size-large-2 {
+    font-size: 130%;
+}
+
+.problem-statement .tex-font-size-large-3 {
+    font-size: 145%;
+}
+
+.problem-statement .tex-font-size-huge-1 {
+    font-size: 175%;
+}
+
+.problem-statement .tex-font-size-huge-2 {
+    font-size: 200%;
+}
+
+.problem-statement .tex-font-style-rm {
+}
+
+.problem-statement .tex-font-style-sf {
+    font-family: arial;
+}
+
+.problem-statement .tex-font-style-tt {
+    font-size: 110%;
+    font-family: courier new;
+}
+
+.problem-statement .tex-font-style-md {
+}
+
+.problem-statement .tex-font-style-bf {
+    font-weight: bold;
+}
+
+.problem-statement .tex-font-style-up {
+}
+
+.problem-statement .tex-font-style-it {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sl {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sc {
+    text-transform: uppercase;
+}
+
+.problem-statement .tex-graphics {
+    display: block;
+}
+</style>      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=">
+      
+      <meta name="description" content="Параллель C. Рекурсия">
+      <style rel="stylesheet" type="text/css" data-href="http://informatics.mccme.ru/moodle/mod/statements/statements_print.css">/* $Id: statements_print.css,v 1.1 2006/03/12 18:39:59 skodak Exp $ */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 0px;
+    font-family: "Times New Roman", Times, serif;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+.statements_title {
+    margin-left: -40px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.statements_summary {
+    margin-left: -40px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.statements_chapter_title {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: bold;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+
+    margin-left: -40px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.statements_chapter {
+    page-break-before: always;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* link rewriting for mozilla - collides with filters :-( */
+/*
+a[href^="http://"]:after, a[href^="ftp://"]:after {
+    content: " ["attr(href)"]";
+}
+*/
+
+/* just some hack - ignore user defined <font> */
+font {
+    color: #000000;
+    background-color: #EEEEEE;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* ===== TOC numbering styles ===== */
+
+/* numbering == NONE */
+.statements_toc_none {
+    page-break-before: always;
+}
+.statements_toc_none ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_none li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == NUMBERED */
+.statements_toc_numbered {
+    page-break-before: always;
+}
+.statements_toc_numbered ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_numbered li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == BULLETS */
+.statements_toc_bullets {
+    page-break-before: always;
+}
+.statements_toc_bullets ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_bullets ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_bullets li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_bullets li li {
+    margin-top: 0px;
+    list-style: circle;
+}
+
+/* numbering == INDENTED */
+.statements_toc_indented {
+    page-break-before: always;
+}
+.statements_toc_indented ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_indented ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_indented li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_indented li li {
+    margin-top: 0px;
+    list-style: none;
+}
+</style>
+    <link type="image/x-icon" rel="shortcut icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></head>
+    <body>
+    <a name="top"></a>
+    <p class="statements_title">Параллель C. Рекурсия</p>
+    <p class="statements_summary"></p>
+    
+
+    <div class="statements_toc_alpha"><a name="toc"></a><p class="statements_chapter_title">Список задач</p><ul><li><a href="#ch156"><b>Задача A.</b> Без массивов</a></li><li><a href="#ch153"><b>Задача B.</b> N-е число Фибоначчи</a></li><li><a href="#ch155"><b>Задача C.</b> Генератор</a></li><li><a href="#ch158"><b>Задача D.</b> Сумма кубов</a></li><li><a href="#ch3050"><b>Задача E.</b> Ханойские башни</a></li></ul></div><hr><div class="statements_chapter"><h1><a name="ch156">Без массивов</a></h1><p class="statements_chapter_title"><b>Задача A.</b> Без массивов</p><div class="problem-statement">
+   <div class="legend">
+
+
+<table cellpadding="1"><tbody> 
+  <tr> 
+    <td><font face="courier new,courier,monospace">Максимальное время работы на одном тесте:</font> 
+    </td> 
+    <td><font face="courier new,courier,monospace">1 секунда</font> 
+    </td> 
+  </tr></tbody> 
+</table>
+<p>Дано натуральное число <em>N</em> и последовательность из <em>N</em> элементов. Требуется вывести эту последовательность в обратном порядке.</p>
+<p><b><em>Примечание.</em></b> В программе запрещается объявлять массивы и использовать циклы (даже для ввода и вывода).</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>В первой строке входных данных содержится&nbsp;натуральное число <em>N</em> (<em>N</em> ≤ 10<sup>3</sup>). Во второй строке через пробел идут <em>N</em> целых чисел, по модулю не превосходящих 1000,&nbsp;– элементы последовательности.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Требуется&nbsp;вывести заданную последовательность в обратном порядке.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">2
+3 4
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">4 3 
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch153">N-е число Фибоначчи</a></h1><p class="statements_chapter_title"><b>Задача B.</b> N-е число Фибоначчи</p><div class="problem-statement">
+   <div class="legend">
+
+<table cellpadding="1"><tbody> 
+  <tr> 
+    <td><font face="courier new,courier,monospace">Максимальное время работы на одном тесте:</font> 
+    </td> 
+    <td><font face="courier new,courier,monospace">1 секунда</font> 
+    </td> 
+  </tr></tbody> 
+</table>
+<p>Последовательностью Фибоначчи называется последовательность чисел <em>a<sub>0</sub></em>, <em>a<sub>1</sub></em>, ..., <em>a<sub>n</sub></em>, ..., где <em>a<sub>0</sub></em> = 0, <em>a<sub>1</sub></em> = 1, <em>a<sub>k</sub></em> = <em>a<sub>k-1</sub></em> + <em>a<sub>k-2</sub></em> (<em>k</em> &gt; 1).</p>
+<p>Требуется найти <em>N</em>-е число Фибоначчи.</p>
+<p><b><em>Примечание</em>.</b> В программе запрещается использовать циклы.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>На вход программы поступает целое неотрицательное число <em>N</em> (<em>N</em> ≤ 30).</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Требуется&nbsp;вывести <em>N</em>-е число Фибоначчи.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">2
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch155">Генератор</a></h1><p class="statements_chapter_title"><b>Задача C.</b> Генератор</p><div class="problem-statement">
+   <div class="legend">
+
+<table border="0" cellpadding="1"><tbody><tr><td><font face="courier new,courier,monospace">Максимальное время работы на одном тесте:</font> </td><td><font face="courier new,courier,monospace">2&nbsp;секунды</font> </td></tr></tbody></table><p>Даны два натуральных числа <em>N</em> и <em>K</em>. Требуется вывести&nbsp; все цепочки <em>x<sub>1</sub></em>, <em>x<sub>2</sub></em>, ..., <em>x<sub>N</sub></em> такие, что <em>x<sub>i</sub></em> - натуральное и 1 ≤ <em>x<sub>i</sub></em> ≤ <em>K</em>.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводятся два натуральных числа <em>N</em> и <em>K</em> (<em>N</em>, <em>K</em> ≤ 6).</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Выведите все требуемые цепочки в произвольном порядке&nbsp;– по одной на строке. Никакая цепочка не должна встречаться более одного раза.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">2 3
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1 1 
+1 2 
+1 3 
+2 1 
+2 2 
+2 3 
+3 1 
+3 2 
+3 3 
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch158">Сумма кубов</a></h1><p class="statements_chapter_title"><b>Задача D.</b> Сумма кубов</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Известно, что любое натуральное число можно представить в виде суммы не более чем четырех квадратов натуральных чисел. Вася решил придумать аналогичное утверждение для кубов - он хочет узнать, сколько кубов достаточно для представления любого числа. Его первая рабочая гипотеза - восемь.</p>
+<p>Выяснилось, что почти все чиcла, которые Вася смог придумать, представляются в виде суммы не более чем восьми кубов. Однако число 239, например, не допускает такого представления. Теперь Вася хочет найти какие-либо другие такие числа, а также, возможно, какую-либо закономерность в представлениях всех остальных чисел, чтобы выдвинуть гипотезу относительно вида всех чисел, которые не представляются в виде суммы восьми кубов.</p>
+<p>Помогите Васе написать программу, которая проверяла бы, возможно ли представить данное натуральное число в виде суммы не более чем восьми кубов натуральных чисел, и если это возможно, то находила бы какое-либо такое представление.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Вводится натуральное число <em>N</em> &lt;= 2*10<sup>9</sup>.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Требуется вывести не&nbsp;более восьми натуральных чисел, кубы которых в сумме дают <em>N</em>. Если искомого представления не существует, то в выходной файл необходимо вывести слово <font face="courier new,courier,monospace">IMPOSSIBLE</font>.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">239
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">IMPOSSIBLE
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">17
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">2 2 1 
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3050">Ханойские башни</a></h1><p class="statements_chapter_title"><b>Задача E.</b> Ханойские башни</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p> Головоломка “Ханойские башни” состоит из трех стержней, пронумерованных числами 1, 2, 3. На стержень 1 надета пирамидка из n дисков различного диаметра в порядке возрастания диаметра. Диски можно перекладывать с одного стержня на другой по одному, при этом диск нельзя класть на диск меньшего диаметра. Необходимо переложить всю пирамидку со стержня 1 на стержень 3 <strong>за минимальное число 	перекладываний</strong>.  </p>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAABjCAIAAAGxkhiBAAAACXBIWXMAAA7TAAAO+QHhEHSGAAAEuklEQVR42u2d646rMAyEWynv/8o9lThCLJc0JLZjm29+rHa3LSGejG9AWj6fz+sv3u/38Z/H93x/Xr3t6gjleIjG8TrwZ7DtABrjlaujq89MG6UyFXFLlspxtTjTYKg2s9OX5c2opKqTwfpGqn/k9NXvQLZL38aAy3T3gzVatf6201dPvHDdnXcTVlR9bpOX0nJRpi5jNwNTTyhrwJpnkufpe0QDh/sjjggasIy4VN+rPJU7X1nv4/7Wp8rdQ5glBiqr4krPIVA62PBPV+k4425tTJtV47kG40rDI82c1a0TXd7pdm5lxPZu6Srbvo9NIO4eq/1Txb/0OyZfXhlRfgZcQQm1VNYiny0tLkFKciOmufXZ33lgewMjQBQO7UKSeouOsBCyvkoQvp6xAhuvzwWrRFpON56uEnLVeLrBKvy7VWMqrjJX+J4nVroXVRiu8vQtRnTivcfUd3IBekxpcHKHQNr6ilkxK2Y1OqtBb7ENWa7C16wT0xsr5wJ8uq84bUnXbw2O1cVOQlX39dV8SaZ3qvou2Ie44SkVVavF+9oauMEwaQVu0I6qcVsjKXWqul0foYu6Cqp+lVPAL1WLs9LwV7hBHOCDqcL1eadKz/XhBuVVpW1H9CpAlU0TiP7FKFWWTsn5A1veqTK+Gw6e7lFlsHNQXVgGB48+qYUj6ipKYABVj6aKvDkGVeRgT6Fqq0hXrE85sZ1/8rUL3PYOVm/LcHsTjn2yLj4uaQUZIJhLVV3Ux1fJWeZQ1XFrLV2+CVR1GH1p/sJWjFjFdakwVMHTBKpWfbR7M54qmBar+oRCrDKlatDcsGVE1bih/W/NRFoBcIBQVa9kRxwghlanSiThJmu3U9XgGNydqU6VrHHJA8kAoUpUB4QroxIYM7mmSkMHaEueKiWbcvlKRVVKax9JCVOll1iTrweoq+BJMVZppH9kFpJUGTxej7xidCvIA2WoYr2HoYqmaiQHaOCgWAoyDtDAlOSBo1SZuT4uNo5SheFQFYicrFNa3abqaDJLI6qOpdcea5yR4Lj/91jC6TnHQjm3wUQugQFUAaiCKgBVAKrSU0XjIAZV1L84QJBLVRXfi9yxWNDJzvd/V9+mDtqNltti4VYISQUAiAqAZ4qqcQ//0/9X0mU2nAZPFNW67jWW+7GW4LZF8IhIZfkFqOgKUFMBgKi6osfL6jk6yirwoEjF5SaAqKKGDkIWSCiquTsarA/p07EAydM/e2mhK4CoAEBUv6LElCSQmgqkramOv09RF9ICgUXlMERMDJgAjIrK59rddgKRFgic/nkDe+yDkKLy3MImTIGoker4/egT13HjE1wAOBWVw4cF12pqd4aoC3gXlfPM6vQpRqQF/Ioq3AKlYwGC1VQAgFFRzb0dqbv2I/cDriPVmlCRVgEwJConffOReEXIAo5EFT2JWs+cbBC4EBULEQBhUfFELQDy6V+4pl+mghCkTf+u/owoMHQFpokqa9OMZiCYI6rE/Qm2NAPTIhULDgCV9C+ltLhOACaIarfZQ4LYxVOMwEhUdZ+daeXlmMvd755MSZnzHRx49AMAw5oKAICoAEBUACAqAACiAgBRAYCoAAB7UbGLCwBiouJuHQBk8Q80loyHfnfhWAAAAABJRU5ErkJggg==" border="0" alt=" " width="284" height="99"> <br>
+
+</p>
+
+<p>Напишите программу, которая решает головоломку; для данного числа дисков n печатает последовательность перекладываний в формате a b c, где a&nbsp;— номер перекладываемого диска, b&nbsp;— номер стержня с которого снимается данный диск, c&nbsp;— номер стержня на который надевается данный диск.  </p>
+
+<p>Например, строка 1 2 3 означает перемещение диска номер 1 со стержня 2 на стержень 3. В одной строке печатается одна команда. Диски пронумерованы числами от 1 до n в порядке возрастания диаметров.  </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится натуральное число n.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Программа должна вывести минимальный (по количеству произведенных операций) способ перекладывания пирамидки из данного числа дисков.</p> 
+
+   </div>
+   </div>
+
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">2
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1 1 2
+2 1 3
+1 2 3
+</pre></div></div></div></div></div> <autoscroll></autoscroll></body></html>

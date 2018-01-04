@@ -1,0 +1,655 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!--
+ Archive processed by SingleFile 
+ url: http://informatics.mccme.ru/moodle/mod/statements/print3.php?id=26803 
+ saved date: Fri Aug 18 2017 11:45:30 GMT+0300 (MSK) 
+--><head>
+      <title>Параллель D. Массивы</title>
+      <style type="text/css">.problem-statement {
+    margin: 0.5em;
+    font-family: verdana;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.problem-statement p {
+    margin: 0 0 1em 0;
+}
+
+.problem-statement .header {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    margin-bottom: 0.5em;
+}
+
+.problem-statement .header .title {
+    font-size: 150%;
+    font-family: arial;
+}
+
+.problem-statement ul {
+    list-style: disc;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.problem-statement .property-title {
+    display: inline;
+}
+
+.problem-statement .property-title:after {
+    content: ": ";
+}
+
+.problem-statement .time-limit, .problem-statement .memory-limit, .problem-statement .input-file, .problem-statement .output-file {
+    margin: 0 auto;
+}
+
+.problem-statement .legend {
+    margin-bottom: 1em;
+}
+
+.problem-statement .section-title {
+    font-family: arial;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+.problem-statement .input-specification,
+    .problem-statement .output-specification,
+    .problem-statement .sample-tests,
+    .problem-statement .author,
+    .problem-statement .resource,
+    .problem-statement .date {
+    /*margin-bottom: 1em;*/
+}
+
+.problem-statement .output-specification {
+    margin-bottom: 1em;
+}
+
+.problem-statement .sample-tests .sample-test {
+}
+
+.problem-statement .sample-tests .input, .problem-statement .sample-tests .output {
+    border: 1px solid #888;
+}
+
+.problem-statement .sample-tests .output {
+    margin-bottom: 1em;
+    position: relative;
+    top: -1px;
+}
+
+.problem-statement .sample-tests pre {
+    line-height: 1.25em;
+    padding: 0.25em;
+    margin: 0;
+    background-color: #efefef;
+}
+
+.problem-statement .sample-tests .title {
+    font-family: arial;
+    padding: 0.25em;
+    border-bottom: 1px solid #888;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.problem-statement .tex-formula {
+    vertical-align: middle;
+    margin: 0;
+    border:medium none;
+    position: relative;
+    bottom: 2px;
+}
+
+.problem-statement .tex-span {
+    font-size: 125%;
+    font-family: times new roman;
+}
+
+.problem-statement .tex-font-size-tiny {
+    font-size: 70%;
+}
+
+.problem-statement .tex-font-size-script {
+    font-size: 75%;
+}
+
+.problem-statement .tex-font-size-footnotes {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-small {
+    font-size: 85%;
+}
+
+.problem-statement .tex-font-size-normal {
+    font-size: 100%;
+}
+
+.problem-statement .tex-font-size-large-1 {
+    font-size: 115%;
+}
+
+.problem-statement .tex-font-size-large-2 {
+    font-size: 130%;
+}
+
+.problem-statement .tex-font-size-large-3 {
+    font-size: 145%;
+}
+
+.problem-statement .tex-font-size-huge-1 {
+    font-size: 175%;
+}
+
+.problem-statement .tex-font-size-huge-2 {
+    font-size: 200%;
+}
+
+.problem-statement .tex-font-style-rm {
+}
+
+.problem-statement .tex-font-style-sf {
+    font-family: arial;
+}
+
+.problem-statement .tex-font-style-tt {
+    font-size: 110%;
+    font-family: courier new;
+}
+
+.problem-statement .tex-font-style-md {
+}
+
+.problem-statement .tex-font-style-bf {
+    font-weight: bold;
+}
+
+.problem-statement .tex-font-style-up {
+}
+
+.problem-statement .tex-font-style-it {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sl {
+    font-style: italic;
+}
+
+.problem-statement .tex-font-style-sc {
+    text-transform: uppercase;
+}
+
+.problem-statement .tex-graphics {
+    display: block;
+}
+</style>      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=">
+      
+      <meta name="description" content="Параллель D. Массивы">
+      <style rel="stylesheet" type="text/css" data-href="http://informatics.mccme.ru/moodle/mod/statements/statements_print.css">/* $Id: statements_print.css,v 1.1 2006/03/12 18:39:59 skodak Exp $ */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 0px;
+    font-family: "Times New Roman", Times, serif;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+.statements_title {
+    margin-left: -40px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.statements_summary {
+    margin-left: -40px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.statements_chapter_title {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: bold;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+
+    margin-left: -40px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.statements_chapter {
+    page-break-before: always;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* link rewriting for mozilla - collides with filters :-( */
+/*
+a[href^="http://"]:after, a[href^="ftp://"]:after {
+    content: " ["attr(href)"]";
+}
+*/
+
+/* just some hack - ignore user defined <font> */
+font {
+    color: #000000;
+    background-color: #EEEEEE;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* ===== TOC numbering styles ===== */
+
+/* numbering == NONE */
+.statements_toc_none {
+    page-break-before: always;
+}
+.statements_toc_none ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_none li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == NUMBERED */
+.statements_toc_numbered {
+    page-break-before: always;
+}
+.statements_toc_numbered ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_numbered li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == BULLETS */
+.statements_toc_bullets {
+    page-break-before: always;
+}
+.statements_toc_bullets ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_bullets ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_bullets li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_bullets li li {
+    margin-top: 0px;
+    list-style: circle;
+}
+
+/* numbering == INDENTED */
+.statements_toc_indented {
+    page-break-before: always;
+}
+.statements_toc_indented ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_indented ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_indented li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_indented li li {
+    margin-top: 0px;
+    list-style: none;
+}
+</style>
+    <link type="image/x-icon" rel="shortcut icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></head>
+    <body>
+    <a name="top"></a>
+    <p class="statements_title">Параллель D. Массивы</p>
+    <p class="statements_summary"></p>
+    
+
+    <div class="statements_toc_alpha"><a name="toc"></a><p class="statements_chapter_title">Список задач</p><ul><li><a href="#ch3152"><b>Задача A.</b> Четные индексы</a></li><li><a href="#ch3154"><b>Задача B.</b> Количество положительных</a></li><li><a href="#ch3157"><b>Задача C.</b> Больше своих соседей</a></li><li><a href="#ch3166"><b>Задача D.</b> Циклический сдвиг вправо</a></li><li><a href="#ch3163"><b>Задача E.</b> Вывести в обратном порядке</a></li><li><a href="#ch3161"><b>Задача F.</b> Шеренга</a></li><li><a href="#ch3174"><b>Задача G.</b> Сжатие списка</a></li><li><a href="#ch3171"><b>Задача H.</b> Уникальные элементы</a></li><li><a href="#ch3167"><b>Задача I.</b> Переставить min и max</a></li><li><a href="#ch3116"><b>Задача J.</b> Делаем срезы</a></li></ul></div><hr><div class="statements_chapter"><h1><a name="ch3152">Четные индексы</a></h1><p class="statements_chapter_title"><b>Задача A.</b> Четные индексы</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Выведите все элементы списка с четными индексами (то есть A[0], A[2], A[4], ...).  </p><p>Программа должна быть эффективной и не выполнять лишних действий!  </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+<p>Вводится список чисел. Все числа списка находятся на одной строке.</p>
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1 2 3 4 5
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1 3 5 
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3154">Количество положительных</a></h1><p class="statements_chapter_title"><b>Задача B.</b> Количество положительных</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Найдите количество положительных элементов в данном списке.  </p>   
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится список чисел. Все числа списка находятся на одной строке.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1 -2 3 -4 5
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3157">Больше своих соседей</a></h1><p class="statements_chapter_title"><b>Задача C.</b> Больше своих соседей</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Дан список чисел. Определите, сколько в этом списке элементов, которые больше двух своих соседей и выведите количество таких элементов.  </p>  
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится список чисел. Все числа списка находятся на одной строке.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1 2 3 4 5
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">0
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1 5 1 5 1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">2
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3166">Циклический сдвиг вправо</a></h1><p class="statements_chapter_title"><b>Задача D.</b> Циклический сдвиг вправо</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Циклически сдвиньте элементы списка вправо (A[0] переходит на место A[1], A[1] на место A[2], ..., последний элемент переходит на место A[0]).  </p><p>Используйте минимально возможное количество операций присваивания.  </p>   
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится список чисел. Все числа списка находятся на одной строке.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1 2 3 4 5
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">5 1 2 3 4 
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3163">Вывести в обратном порядке</a></h1><p class="statements_chapter_title"><b>Задача E.</b> Вывести в обратном порядке</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Выведите элементы данного списка в обратном порядке, не изменяя сам список.  </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится список чисел. Все числа списка находятся на одной строке.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1 2 3 4 5
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">5 4 3 2 1 
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3161">Шеренга</a></h1><p class="statements_chapter_title"><b>Задача F.</b> Шеренга</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Петя перешёл в другую школу. На уроке физкультуры ему понадобилось определить своё место в строю. Помогите ему это сделать.  </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Программа получает на вход невозрастающую последовательность натуральных чисел, означающих рост каждого человека в строю. После этого вводится число X – рост Пети. Все числа во входных данных натуральные и не превышают 200.  </p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Выведите номер, под которым Петя должен встать в строй. Если в строю есть люди с одинаковым ростом, таким же, как у Пети, то он должен встать после них.  </p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">165 163 160 160 157 157 155 154 
+162
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">165 163 160 160 157 157 155 154 
+160
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">5
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3174">Сжатие списка</a></h1><p class="statements_chapter_title"><b>Задача G.</b> Сжатие списка</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Дан список целых чисел. Требуется “сжать” его, переместив все ненулевые элементы в левую часть списка, не меняя их порядок, а все нули - в правую часть. Порядок ненулевых элементов изменять нельзя, дополнительный список использовать нельзя, задачу нужно выполнить за один проход по списку. Распечатайте полученный список.  </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится список чисел. Все числа списка находятся на одной строке.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">4 0 5 0 3 0 0 5
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">4 5 3 5 0 0 0 0 
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3171">Уникальные элементы</a></h1><p class="statements_chapter_title"><b>Задача H.</b> Уникальные элементы</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Дан список. Выведите те его элементы, которые встречаются в списке только один раз. Элементы нужно выводить в том порядке, в котором они встречаются в списке.  </p>  
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Вводится список чисел. Все числа списка находятся на одной строке.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1 2 2 3 3 3
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1 
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3167">Переставить min и max</a></h1><p class="statements_chapter_title"><b>Задача I.</b> Переставить min и max</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>В списке все элементы различны. Поменяйте местами минимальный и максимальный элемент этого списка.  </p>  
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Вводится список чисел. Все числа списка находятся на одной строке.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите ответ на задачу.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 4 5 2 1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3 4 1 2 5 
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3116">Делаем срезы</a></h1><p class="statements_chapter_title"><b>Задача J.</b> Делаем срезы</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Выполните разбор строки, согласно приведенным правилам.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Дана строка.  </p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Сначала выведите третий символ этой строки.  </p><p>Во второй строке выведите предпоследний символ этой строки.  </p><p>В третьей строке выведите первые пять символов этой строки.  </p><p>В четвертой строке выведите всю строку, кроме последних двух символов.  </p><p>В пятой строке выведите все символы с четными индексами (считая, что индексация начинается с 0, поэтому символы выводятся начиная с первого).  </p><p>В шестой строке выведите все символы с нечетными индексами, то есть начиная со второго символа строки.  </p><p>В седьмой строке выведите все символы в обратном порядке.  </p><p>В восьмой строке выведите все символы строки через один в обратном порядке, начиная с последнего.  </p><p>В девятой строке выведите длину данной строки.   </p>
+
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">Abrakadabra
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">r
+r
+Abrak
+Abrakadab
+Arkdba
+baaar
+arbadakarbA
+abdkrA
+11
+</pre></div></div></div></div></div> </body></html>
