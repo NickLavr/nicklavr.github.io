@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><!--
  Archive processed by SingleFile 
- url: http://informatics.mccme.ru/moodle/mod/statements/print3.php?id=28454 
- saved date: Wed Oct 25 2017 15:34:42 GMT+0300 (MSK) 
+ url: http://informatics.mccme.ru/mod/statements/print3.php?id=30053 
+ saved date: Fri Jan 05 2018 10:48:25 GMT+0300 (MSK) 
 --><head>
-      <title>Бабочки. День 4</title>
+      <title>Параллель B. BFS</title>
       <style type="text/css">.problem-statement {
     margin: 0.5em;
     font-family: verdana;
@@ -193,8 +193,8 @@
 </style>      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta http-equiv="Content-Type" content="text/html; charset=">
       
-      <meta name="description" content="Бабочки. День 4">
-      <style rel="stylesheet" type="text/css" data-href="http://informatics.mccme.ru/moodle/mod/statements/statements_print.css">/* $Id: statements_print.css,v 1.1 2006/03/12 18:39:59 skodak Exp $ */
+      <meta name="description" content="Параллель B. BFS">
+      <style rel="stylesheet" type="text/css" data-href="http://informatics.mccme.ru/mod/statements/statements_print.css">/* $Id: statements_print.css,v 1.1 2006/03/12 18:39:59 skodak Exp $ */
 
 h1, h2, h3, h4, h5, h6 {
     margin-left: 0px;
@@ -414,52 +414,19 @@ a .typeset img, .typeset a img {border: 0px; border-bottom: 1px solid blue;}
 .typeset .icmbx10 {font-family: serif; font-weight: bold}
 .typeset .icmti10 {font-family: serif; font-style: italic}
 </style><link type="image/x-icon" rel="shortcut icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></head>
-    <body contenteditable="false"><div id="jsMath_message" title="" style="visibility: hidden;">Processing Math: Done</div><div id="jsMath_PrintWarning"><center><table><tbody><tr><td><div class="message">To print higher-resolution math symbols, click the<br>
+    <body><div id="jsMath_message" title="" style="visibility: hidden;">Processing Math: Done</div><div id="jsMath_PrintWarning"><center><table><tbody><tr><td><div class="message">To print higher-resolution math symbols, click the<br>
 <b>Hi-Res Fonts for Printing</b> button on the jsMath control panel.<br>
 </div><div style="width:22em; height:1px"></div></td></tr></tbody></table></center><hr></div><div id="jsMath_button" title=" Open jsMath Control Panel "><span onclick="jsMath.Controls.Panel()">jsMath</span></div><div id="jsMath_panel" style="display: none;"></div><div id="jsMath_Hidden" style="visibility: hidden; position: absolute; top: 0px; left: 0px; border: 0px; padding: 0px; margin: 0px;"></div><div style="position: fixed; bottom: 1px; left: 2px; background-color: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: 75%; width: auto; visibility: hidden;"></div>
     <a name="top"></a>
-    <p class="statements_title">Бабочки. День 4</p>
+    <p class="statements_title">Параллель B. BFS</p>
     <p class="statements_summary"></p>
     
 
-    <div class="statements_toc_alpha"><a name="toc"></a><p class="statements_chapter_title">Список задач</p><ul><li><a href="#ch3868"><b>Задача A.</b> Кондиционер</a></li><li><a href="#ch112748"><b>Задача B.</b> Кольцевая линия</a></li><li><a href="#ch3586"><b>Задача C.</b> Магнитные подушки</a></li><li><a href="#ch111226"><b>Задача D.</b> Театр начинается с актеров</a></li></ul></div><hr><div class="statements_chapter"><h1><a name="ch3868">Кондиционер</a></h1><p class="statements_chapter_title"><b>Задача A.</b> Кондиционер</p><div class="problem-statement">
+    <div class="statements_toc_alpha"><a name="toc"></a><p class="statements_chapter_title">Список задач</p><ul><li><a href="#ch98"><b>Задача A.</b> Есть ли цикл?</a></li><li><a href="#ch166"><b>Задача B.</b> Построение</a></li><li><a href="#ch3376"><b>Задача C.</b> Кратчайший путь</a></li><li><a href="#ch1939"><b>Задача D.</b> Эвакуация</a></li><li><a href="#ch160"><b>Задача E.</b> Путь в графе</a></li><li><a href="#ch161"><b>Задача F.</b> Один конь</a></li><li><a href="#ch2001"><b>Задача G.</b> Числа</a></li></ul></div><hr><div class="statements_chapter"><h1><a name="ch98">Есть ли цикл?</a></h1><p class="statements_chapter_title"><b>Задача A.</b> Есть ли цикл?</p><div class="problem-statement">
    <div class="legend">
 
+<p>Дан ориентированный граф. Требуется определить, есть ли в нем цикл.<br></p>
 
-<p>
-В офисе, где работает программист Петр, установили кондиционер нового
-типа. Этот кондиционер отличается особой простотой в управлении. У
-кондиционера есть всего лишь два управляемых параметра: желаемая
-температура и режим работы.</p>
-<p>Кондиционер
-может работать в следующих четырех режимах:</p>
-
-<ul>
-	<li>«<span lang="en-US">freeze</span>»
-	— охлаждение. В этом режиме кондиционер может только уменьшать
-	температуру. Если температура в комнате и так не больше желаемой, то
-	он выключается.</li>
-	<li>«<span lang="en-US">heat</span>»
-	— нагрев. В этом режиме кондиционер может только увеличивать
-	температуру. Если температура в комнате и так не меньше желаемой, то
-	он выключается.</li>
-	<li>«<span lang="en-US">auto</span>»
-
-	— автоматический режим. В этом режиме кондиционер может как
-	увеличивать, так и уменьшать температуру в комнате до желаемой.</li>
-	<li>«<span lang="en-US">fan</span>»
-	— вентиляция. В этом режиме кондиционер осуществляет только
-	вентиляцию воздуха и не изменяет температуру в комнате.</li>
-</ul>
-<p>Кондиционер
-достаточно мощный, поэтому при настройке на правильный режим работы
-он за час доводит температуру в комнате до желаемой.</p>
-<p>Требуется
-написать программу, которая по заданной температуре в комнате <span lang="en-US"><i>t</i></span><sub><span lang="en-US"><i>room</i></span></sub>,
-установленным на кондиционере желаемой температуре <span lang="en-US"><i>t</i></span><sub><span lang="en-US"><i>cond</i></span></sub>
-
-и режиму работы определяет температуру, которая установится в комнате
-через час.</p>
 
    </div>
 
@@ -468,177 +435,302 @@ a .typeset img, .typeset a img {border: 0px; border-bottom: 1px solid blue;}
      Входные данные
     </div>
 
+<p>В первой строке&nbsp;вводится число вершин <em>N</em>≤ 50. Далее в<em> N</em> строках следуют по <em>N</em> чисел, каждое из которых&nbsp;– 0 или 1. <em>j</em>-ое число в <em>i</em>-ой строке равно 1 тогда и только тогда, когда существует ребро, идущее из <em>i</em>-ой вершины в<em> j</em>-ую. Гарантируется, что на диагонали матрицы будут стоять нули.</p>
 
-
-<p>Первая
-строка входного файла содержит два целых числа <span lang="en-US"><i>t</i></span><sub><span lang="en-US"><i>room</i></span></sub>,
-и <span lang="en-US"><i>t</i></span><sub><span lang="en-US"><i>cond</i></span></sub>,
-разделенных ровно одним пробелом (–50<span lang="en-US">&nbsp;</span>≤<span lang="en-US">&nbsp;</span><span lang="en-US"><i>t</i></span><sub><span lang="en-US"><i>room</i></span></sub><span lang="en-US">&nbsp;</span>≤<span lang="en-US">&nbsp;</span>50,
-–50<span lang="en-US">&nbsp;</span>≤<span lang="en-US">&nbsp;</span><span lang="en-US"><i>t</i></span><sub><span lang="en-US"><i>cond</i></span></sub><span lang="en-US">&nbsp;</span>≤<span lang="en-US">&nbsp;</span>50).</p>
-
-<p>Вторая
-строка содержит одно слово, записанное строчными буквами латинского
-алфавита — режим работы кондиционера.</p>
-
-   </div>
+  </div>
 
    <div class="output-specification">
     <div class="section-title">
      Выходные данные
     </div>
 
-
-<p>Выходной
-файл должен содержать одно целое число — температуру, которая
-установится в комнате через час.</p>
-
-    </div>
-
-
-   <div class="note">
-    <div class="section-title">
-	Примечание
-    </div>
-
-
-<p>В
-первом примере кондиционер находится в режиме нагрева. Через час он
-нагреет комнату до желаемой температуры в 20 градусов.</p>
-<p>Во
-втором примере кондиционер находится в режиме охлаждения. Поскольку
-температура в комнате ниже, чем желаемая, кондиционер самостоятельно
-выключается и температура в комнате не поменяется.</p><p>За каждый из 20 тестов программа получает 2 балла; Еще 60 баллов получает программа при прохождении всех тестов.</p>
+<p>Выведите 0, если в заданном графе цикла нет, и 1, если он есть.</p>
 
 
     </div>
     </div>
-<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">10 20
-heat
-</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">20
-</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">10 20
-freeze
-</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">10
-</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch112748">Кольцевая линия</a></h1><p class="statements_chapter_title"><b>Задача B.</b> Кольцевая линия</p><div class="problem-statement">
-   <div class="legend">
-    <p>
-	В городе, в котором живут друзья Андрей и Борис, метро состоит из единственной 
-кольцевой линии, вдоль которой на равном расстоянии друг от друга расположены n
-станций, пронумерованных от 1 до <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span>. Участок линии метро между двумя соседними 
-станциями называется перегоном.<br><br>
-Поезда по кольцевой линии двигаются как по часовой стрелке, так и против часовой 
-стрелки, поэтому чтобы добраться от одной станции до другой, пассажир может выбрать то 
-направление, в котором требуется проехать меньше перегонов. Минимальное число 
-перегонов, которое необходимо проехать, чтобы добраться от одной станции до другой, 
-назовем расстоянием между станциями.<br><br>
-Друзья заметили, что выполняется следующее условие: если загадать некоторую 
-станцию <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span> и выписать для нее два числа: <span class="typeset"><nobr><span class="scale"><span class="icmmi10">D</span><span style="position: relative; top:0.15em;"><span class="size2"><span class="icmmi10">a</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span> — расстояние от станции, на которой живет 
-Андрей, до станции <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">D</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">b</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> — расстояние от станции, на которой живет Борис, до станции <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span>, 
-то полученная пара чисел [<span class="typeset"><nobr><span class="scale"><span class="icmmi10">D</span><span style="position: relative; top:0.15em;"><span class="size2"><span class="icmmi10">a</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">D</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">b</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span>] будет однозначно задавать станцию <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span>.<br><br>
-Например, если <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> = 4, Андрей живет на станции 1, а Борис живет на станции 2, то 
-станция 1 задается парой [0, 1], станция 2 — парой [1, 0], станция 3 — парой [2, 1] и 
-станция 4 — парой [1, 2].<br><br>
-Их одноклассник Сергей живет в соседнем городе и не знает, на каких станциях 
-живут Андрей и Борис. Чтобы найти друзей, он заинтересовался, сколько существует 
-вариантов пар станций <span class="typeset"><nobr><span class="scale"><span class="icmmi10">A</span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">B</span><span class="spacer" style="margin-left:0.050em"></span></span></nobr></span>, таких что если Андрей живет на станции <span class="typeset"><nobr><span class="scale"><span class="icmmi10">A</span></span></nobr></span>, а Борис — на 
-станции <span class="typeset"><nobr><span class="scale"><span class="icmmi10">B</span><span class="spacer" style="margin-left:0.050em"></span></span></nobr></span>, то выполняется описанное выше условие.<br><br>
-Требуется написать программу, которая по числу станций n на кольцевой линии 
-определяет искомое количество вариантов.	
-    </p>
-   </div>
 
-   <div class="input-specification">
-    <div class="section-title">
-     Входные данные
-    </div>
-    <p>
-Первая строка входного файла содержит одно целое число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> (3 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> ≤ 40 000).
-    </p>
-   </div>
-
-
- <div class="output-specification">
-    <div class="section-title">
-     Выходные данные
-    </div>
-    <p>
-	Выходной файл должен содержать одно число — искомое количество вариантов.	
-    </p>
-
- </div>
-
-
-   <div class="output-specification">
-    <div class="section-title">
-    Пояснения к примерам
-    </div>
-    <p>
-	В первом примере подходят следующие варианты:<br>
-* Андрей живет на станции 1, а Борис на станции 2;<br>
-* Андрей живет на станции 1, а Борис на станции 4;<br>
-* Андрей живет на станции 2, а Борис на станции 1;<br>
-* Андрей живет на станции 2, а Борис на станции 3;<br>
-* Андрей живет на станции 3, а Борис на станции 2;<br>
-* Андрей живет на станции 3, а Борис на станции 4;<br>
-* Андрей живет на станции 4, а Борис на станции 1;<br>
-* Андрей живет на станции 4, а Борис на станции 3.<br>
-    </p>
-
- </div>
-
-
-<div class="output-specification">
-    <div class="section-title">
-     Система оценки и описание подзадач
-    </div>
-<br>
-    <p>
-	В этой задаче три подзадачи. Баллы за подзадачу начисляются только в случае, если 
-все тесты для данной подзадачи успешно пройдены.<br>
-<b>Подзадача 1 (25 баллов)</b><br>
-3 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> ≤ 50.<br>
-<b>Подзадача 2 (25 баллов)</b><br>
-3 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> ≤ 500.<br>
-<b>Подзадача 3 (50 баллов)</b><br>
-3 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> ≤ 40000.<br>
-    </p>
-
- </div><div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">4
-</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">8
-</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5
-</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">20
-</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3586">Магнитные подушки</a></h1><p class="statements_chapter_title"><b>Задача C.</b> Магнитные подушки</p><div class="problem-statement"><div class="legend"><p>Город будущего застроен небоскребами, для передвижения между которыми и парковки транспорта многие тройки небоскребов соединены треугольной подушкой из однополярных магнитов. Каждая подушка соединяет ровно 3 небоскреба и вид сверху на нее представляет собой треугольник, с вершинами в небоскребах. Это позволяет беспрепятственно передвигаться между соответствующими небоскребами. Подушки можно делать на разных уровнях, поэтому один небоскреб может быть соединен различными подушками с парами других, причем два небоскреба могут соединять несколько подушек (как с разными третьими небоскребами, так и с одинаковым). Например, возможны две подушки на разных уровнях между небоскребами 1, 2 и 3, и, кроме того, магнитная подушка между 1, 2, 5.</p><p>Система магнитных подушек организована так, что с их помощью можно добираться от одного небоскреба, до любого другого в этом городе (с одной подушки на другую можно перемещаться внутри небоскреба), но поддержание каждой из них требует больших затрат энергии. </p><p>Требуется написать программу, которая определит, какие из магнитных подушек нельзя удалять из подушечной системы города, так как удаление даже только этой подушки может привести к тому, что найдутся небоскребы из которых теперь нельзя добраться до некоторых других небоскребов, и жителям станет очень грустно.</p></div><p></p><p></p><div class="input-specification"><div class="section-title">Входные данные</div><p></p><p>В первой строке входного файла находятся числа <span class="tex-span"><i>N</i></span> и <span class="tex-span"><i>M</i></span>&nbsp;— количество небоскребов в городе и количество работающих магнитных подушек соответственно (<span class="tex-span">3 ≤ <i>N</i> ≤ 100000</span>, <span class="tex-span">1 ≤ <i>M</i> ≤ 100000</span>). В каждой из следующих <span class="tex-span"><i>M</i></span> строк через пробел записаны три числа&nbsp;— номера небоскребов, соединенных подушкой. Небоскребы пронумерованы от 1 до <span class="tex-span"><i>N</i></span>. Гарантируется, что имеющиеся воздушные подушки позволяют перемещаться от одного небоскреба до любого другого. </p></div><p></p><p></p><div class="output-specification"><div class="section-title">Выходные данные</div><p></p><p>Выведите в выходной файл сначала количество тех магнитных подушек, отключение которых невозможно без нарушения сообщения в городе, а потом их номера. Нумерация должна соответствовать тому порядку, в котором подушки перечислены во входном файле. Нумерация начинается с единицы.</p><p>Решения, корректно работающие для&nbsp;<span class="tex-span" style="font-size: 17.5px;">3 ≤ <i>N</i> ≤ 1000</span>,&nbsp;<span class="tex-span" style="font-size: 17.5px;">1 ≤ <i>M</i> ≤ 1000 могут получить до 42 баллов.</span></p></div><p></p>
-
- </div>
-
-<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 1
-1 2 3
-</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1
-1 
-</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 2
-1 2 3
-3 2 1
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3
+0 1 0
+0 0 1
+0 0 0
 </pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">0
-</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5 4
-1 2 3
-2 4 3
-1 2 4
-3 5 1
+</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3
+0 1 0
+0 0 1
+1 0 0
 </pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1
-4 
-</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch111226">Театр начинается с актеров</a></h1><p class="statements_chapter_title"><b>Задача D.</b> Театр начинается с актеров</p><div class="problem-statement-preview"><div class="problem-statement"><div class="legend"><p>Участники олимпиады пришли в казанский театр на спектакль, где играют <span class="tex-span"><i>N</i></span> неизвестных для них актеров. В фойе театра висят портреты всех актеров труппы, которая в полном составе задействована в спектакле. Портреты не подписаны. Зрителям раздали программки, в которых для каждого действия спектакля приводится список фамилий участвующих в нем актеров, но не указаны их роли. Театрал Виталий решил узнать, как выглядит каждый из актеров, упомянутых в программке. Для этого в антракте после каждого действия он выходил в фойе и сопоставлял портреты с увиденными актерами. Требуется написать программу, которая по заданному числу актеров <span class="tex-span"><i>N</i></span> и списку фамилий актеров, участвующих в каждом из <span class="tex-span"><i>M</i></span> действий, определяет номер действия, после которого впервые становится возможным установить соответствие между фамилией актера из программки и его портретом.</p></div><p></p><p></p><div class="input-specification"><div class="section-title">Входные данные</div><p></p><p>Первая строка входного файла содержит два натуральных числа <span class="tex-span"><i>N</i></span> – число актеров и <span class="tex-span"><i>M</i></span> – количество действий в спектакле (<span class="tex-span">1 &lt; <i>N</i> ≤ 100000, 1 ≤ <i>M</i> ≤ 100 000</span>). В каждой из следующих <span class="tex-span"><i>M</i></span> строк сначала записано количество актеров <span class="tex-span"><i>K</i><sub class="lower-index"><i>i</i></sub></span>, участвующих в <span class="tex-span"><i>i</i></span>–ом действии (<span class="tex-span">1 ≤ <i>K</i><sub class="lower-index"><i>i</i></sub> ≤ <i>N</i>, <i>K</i><sub class="lower-index">1</sub> + <i>K</i><sub class="lower-index">2</sub> + ... + <i>K</i><sub class="lower-index"><i>M</i></sub> ≤ 100 000</span>), а затем <span class="tex-span"><i>K</i><sub class="lower-index"><i>i</i></sub></span> различных натуральных чисел, не превосходящих <span class="tex-span"><i>N</i></span>, обозначающих фамилии этих актеров. Соседние числа в каждой строке разделены пробелом.</p></div><p></p><p></p><div class="output-specification"><div class="section-title">Выходные данные</div><p></p><p>Выходной файл должен содержать одну строку, состоящую из <span class="tex-span"><i>N</i></span> записанных через пробел чисел. <span class="tex-span"><i>i</i></span>-е число этой строки – это номер действия, после которого впервые становится возможным установить соответствие между <span class="tex-span"><i>i</i></span>–м актером и его портретом. Если к концу спектакля установить соответствие между каким-либо актером и его портретом так и не удалось, то соответствующее число в строке должно быть равно нулю.</p></div><p></p><p></p><div class="note"><div class="section-title">Примечание</div><p></p><p>В первом примере три актера участвуют в спектакле с тремя действиями. В первом действии участвуют два актера с номерами 1 и 2. Так как актеров всего трое, то после первого акта становится понятно, какой портрет соответствует актеру с номером 3, поэтому третье число строки выходного файла равно 1. Во втором действии участвуют два актера с номерами 3 и 2. Поскольку только второй актер участвовал и в первом, и во втором действиях, то его портрет можно определить после второго действия. А так как портретов всего три, то после второго действия можно установить, что последний портрет соответствует актеру номер 1. Третье действие на ответ не влияет.</p><p>Данная задача содержит три подзадачи. Для оценки каждой подзадачи используется своя группа тестов. Баллы за подзадачу начисляются только в том случае, если все тесты из этой группы пройдены.</p><p></p><ol type="1"><p></p><p></p><li> (оценивается в 30 баллов) Количество актеров <span class="tex-span"><i>N</i></span> не превосходит <span class="tex-span">100</span>, количество действий <span class="tex-span"><i>M</i></span> не превосходит <span class="tex-span">100, <i>K</i><sub class="lower-index">1</sub> + <i>K</i><sub class="lower-index">2</sub> + ... + <i>K</i><sub class="lower-index"><i>M</i></sub> ≤ 100</span>.<p></p><p></p></li><li> (оценивается в 30 баллов) Количество актеров <span class="tex-span"><i>N</i></span> не превосходит <span class="tex-span">10 000</span>, количество действий <span class="tex-span"><i>M</i></span> не превосходит <span class="tex-span">10 000, <i>K</i><sub class="lower-index">1</sub> + <i>K</i><sub class="lower-index">2</sub> + ... + <i>K</i><sub class="lower-index"><i>M</i></sub> ≤ 10 000</span>.<p></p><p></p></li><li> (оценивается в 40 баллов) Количество актеров <span class="tex-span"><i>N</i></span> не превосходит <span class="tex-span">100 000</span>, количество действий <span class="tex-span"><i>M</i></span> не превосходит <span class="tex-span">100 000, <i>K</i><sub class="lower-index">1</sub> + <i>K</i><sub class="lower-index">2</sub> + ... + <i>K</i><sub class="lower-index"><i>M</i></sub> ≤ 100 000</span>.<p></p><p></p></li></ol></div></div><p></p> </div>
-<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 3
-2 1 2
-2 3 2
-2 1 2
-</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">2 2 1
-</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5 3
-3 1 2 3
-3 2 1 3
-2 1 3
-</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">0 3 0 0 0
-</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">4 3
-1 1
-1 3
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch166">Построение</a></h1><p class="statements_chapter_title"><b>Задача B.</b> Построение</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Группа солдат-новобранцев прибыла в армейскую часть N666. После знакомства с прапорщиком стало очевидно, что от работ на кухне по очистке картофеля спасти солдат может только чудо.</p>
+<p>Прапорщик, будучи не в состоянии запомнить фамилии, пронумеровал новобранцев от 1 до <em>N</em>. После этого он велел им построиться по росту (начиная с самого высокого). С этой несложной задачей могут справиться даже совсем необученные новобранцы, да вот беда, прапорщик уверил себя, что знает про некоторых солдат, кто из них кого выше, и это далеко не всегда соответствует истине.</p>
+<p>После трех дней обучения новобранцам удалось выяснить, что знает (а точнее, думает, что знает) прапорщик. Помогите им, используя эти знания, построиться так, чтобы товарищ прапорщик остался доволен.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Сначала&nbsp;на вход программы поступают&nbsp;числа <em>N</em> и <em>M</em> (1 &lt; <em>N</em> &lt;= 100, 1 &lt;= <em>M</em> &lt;= 5000)&nbsp;– количество солдат в роте и количество пар солдат, про которых прапорщик знает, кто из них выше. Далее идут эти пары чисел <em>A</em> и <em>B</em> по одной на строке (1 &lt;= <em>A</em>,<em>B</em> &lt;= <em>N</em>), что означает, что, по мнению прапорщика, солдат <em>A</em> выше, чем <em>B</em>. Не гарантируется, что все пары чисел во входных данных различны.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>В первой строке выведите "<font face="courier new,courier,monospace">Yes"</font> (если можно построиться так, чтобы прапорщик остался доволен) или "<font face="courier new,courier,monospace">No</font>" (если нет). После ответа "<font face="courier new,courier,monospace">Yes</font>" на следующей строке выведите <em>N</em> чисел, разделенных пробелами, - одно из возможных построений.</p>
+
+    </div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">4 5
 1 2
-</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1 3 2 3
-</pre></div></div></div></div></div> </div><autoscroll></autoscroll></body></html>
+2 3
+3 4
+1 4
+4 1</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">No</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3376">Кратчайший путь</a></h1><p class="statements_chapter_title"><b>Задача C.</b> Кратчайший путь</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Дан ориентированный взвешенный граф.<br>
+Найдите кратчайшее расстояние от одной заданной вершины до другой. </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+ <p>В первой строке входного файла два числа: <i>N</i> и <i>M</i> (1 ≤ <i>N</i> ≤ 100, 1 ≤ <i>M</i> ≤ 10000), где <i>N</i> - количество вершин графа, а <i>M</i> - количество ребер.<br>
+В следующей строке заданы числа <i>S</i> и <i>F</i> - начальная и конечная вершины.</p>
+
+<p>Далее следует <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> троек чисел <i>A<sub>i</sub></i>, <i>B<sub>i</sub></i>, <i>T<sub>i</sub></i> (1 ≤ <i>T<sub>i</sub></i> ≤ 10) - номера вершин соединенных ребром и вес данного ребра.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Вывести искомое расстояние или -1, если пути между указанными вершинами не существует.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 6
+2 1
+1 2 1
+1 3 1
+2 1 4
+2 3 1
+3 1 2
+3 2 1
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3
+</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch1939">Эвакуация</a></h1><p class="statements_chapter_title"><b>Задача D.</b> Эвакуация</p><div class="problem-statement">
+   <div class="legend">
+    <p>
+		Одна из Сверхсекретных организаций, чье название мы не имеем право разглашать, представляет собой сеть из <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> подземных бункеров, соединенных равными по длине туннелями, по которым из любого бункера можно добраться до любого другого (не обязательно напрямую). Связь с внешним миром осуществляется через специальные засекреченные выходы, которые расположены в некоторых из бункеров.
+</p><p>
+Организации понадобилось составить план эвакуации персонала на случай экстренной ситуации. Для этого для каждого из бункеров необходимо узнать, сколько времени потребуется для того, чтобы добраться до ближайшего из выходов. Вам, как специалисту по таким задачам, поручено рассчитать необходимое время для каждого из бункеров по заданному описанию помещения Сверхсекретной организации. Для вашего же удобства бункеры занумерованы числами от 1 до <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>.
+    </p>
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+    <p>
+		Сначала вводятся два натуральных числа <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span> (<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span></span></nobr></span> ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> ≤ 100000, <span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span></span></nobr></span> ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span> ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>) — количество бункеров и количество выходов соответственно.
+</p><p>
+Далее через пробел записаны <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span> различных чисел от <span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span></span></nobr></span> до <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>, обозначающих номера бункеров, в которых расположены выходы.
+</p><p>
+Потом идёт число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> (1 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> ≤ 100000) — количество туннелей. Далее вводятся M пар чисел – номера бункеров, соединенных туннелем. По каждому из туннелей можно двигаться в обе стороны. В организации не существует туннелей, ведущих из бункера в самого себя, зато может существовать более одного туннеля между парой бункеров.
+    </p>
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+    <p>
+		Выведите <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> чисел, разделенных пробелом  — для каждого из бункеров минимальное время, необходимое чтобы добраться до выхода. Считайте, что время перемещения по одному туннелю равно <span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span></span></nobr></span>.
+    </p>
+
+   </div>
+ </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3
+1
+2 
+3
+1 2
+3 1
+2 3</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1 0 1 </pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">10
+2
+10 8 
+9
+6 7
+7 5
+5 8
+8 1
+1 10
+10 3
+3 4
+4 9
+9 2</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1 4 1 2 1 3 2 0 3 0 </pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch160">Путь в графе</a></h1><p class="statements_chapter_title"><b>Задача E.</b> Путь в графе</p><div class="problem-statement">
+   <div class="legend">
+
+<table cellpadding="1"><tbody> 
+  <tr> 
+    <td><font face="courier new,courier,monospace">Максимальное время работы на одном тесте: &nbsp; </font> 
+    </td> 
+    <td><font face="courier new,courier,monospace">5 секунд </font> 
+    </td> 
+  </tr></tbody> 
+</table>
+<p>В неориентированном графе требуется найти минимальный путь между двумя вершинами.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Первым на вход поступает&nbsp;число <em>N</em> – количество вершин в графе (1 ≤ <em>N</em> ≤ 100). Затем записана матрица смежности (0 обозначает отсутствие ребра, 1 – наличие ребра).&nbsp;Далее задаются&nbsp;номера двух вершин – начальной и конечной. </p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Выведите  сначала <em>L</em> – длину кратчайшего пути (количество ребер, которые нужно пройти), а потом сам путь. Если путь имеет длину 0, то его выводить не нужно, достаточно вывести длину.</p>
+<p>Необходимо вывести путь (номера всех вершин в правильном порядке). Если пути нет, нужно вывести -1.  
+
+    </p></div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5
+0 1 0 0 1
+1 0 1 0 0
+0 1 0 0 0
+0 0 0 0 0
+1 0 0 0 0
+3 5</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3
+3 2 1 5</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch161">Один конь</a></h1><p class="statements_chapter_title"><b>Задача F.</b> Один конь</p><div class="problem-statement">
+   <div class="legend">
+
+<table cellpadding="1"><tbody> 
+  <tr> 
+    <td><font face="courier new,courier,monospace">Максимальное время работы на одном тесте: </font> 
+    </td> 
+    <td><font face="courier new,courier,monospace">1 секунда</font> 
+    </td> 
+  </tr></tbody> 
+</table>
+<p>На шахматной доске <em>N</em>x<em>N</em> в клетке (<em>x1</em>, <em>y1</em>) стоит голодный шахматный конь. Он хочет попасть в клетку (<em>x2</em>, <em>y2</em>), где растет вкусная шахматная трава. Какое наименьшее количество ходов он должен для этого сделать?</p>
+
+  </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>На вход программы поступает &nbsp;пять чисел: <em>N</em>, <em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2 </em>(5 &lt;= <em>N</em> &lt;= 20, 1 &lt;= <em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em> &lt;= <em>N</em>). Левая верхняя клетка доски имеет координаты (1, 1), правая нижняя - (<em>N</em>, <em>N</em>). </p>
+
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>В первой строке&nbsp;выведите единственное число <em>K</em> - наименьшее необходимое число ходов коня. В каждой из следующих <em>K</em>+1 строк должно быть записано 2 числа - координаты очередной клетки в пути коня.</p>
+<p><b>Пример выходного файла ниже неполный, правильный пример такой:</b></p>
+<pre>4
+3 3
+2 1
+1 3
+3 2
+5 1
+</pre>
+
+
+    </div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5
+3 3
+5 1</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">4</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2001">Числа</a></h1><p class="statements_chapter_title"><b>Задача G.</b> Числа</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Витя хочет придумать новую игру с числами. В этой игре
+от игроков требуется преобразовывать четырехзначные числа
+не содержащие нулей при помощи следующего разрешенного
+набора действий:</p>
+
+<p>1. Можно увеличить первую цифру числа на 1, если она не
+равна 9.</p>
+
+<p>2. Можно уменьшить последнюю цифру на 1, если она не
+равна 1.</p>
+
+<p>3. Можно циклически сдвинуть все цифры на одну вправо.</p>
+
+<p>4. Можно циклически сдвинуть все цифры на одну влево.</p>
+
+<p>Например, применяя эти правила к числу 1234 можно получить числа 2234, 1233, 4123 и 2341 соответственно. Точные правила игры Витя пока не придумал, но пока его интересует вопрос, как получить из одного числа другое за минимальное количество операций.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Во входном файле содержится два различных четырехзначных числа, каждое из которых не содержит нулей.</p>
+
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Программа должна вывести последовательность
+четырехзначных чисел, не содержащих нулей. Последовательность
+должна начинаться первым из данных чисел и заканчиваться
+вторым из данных чисел, каждое последующее число в
+последовательности должно быть получено из предыдущего числа
+применением одного из правил. Количество чисел в
+последовательности должно быть минимально возможным.</p>
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1234
+4321
+</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1234
+2234
+3234
+4323
+4322
+4321
+</pre></div></div></div></div></div> <autoscroll></autoscroll></body></html>
